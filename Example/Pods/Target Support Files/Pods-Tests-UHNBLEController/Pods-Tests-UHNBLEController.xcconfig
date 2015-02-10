@@ -1,0 +1,1 @@
+PODS_TESTS_UHNBLECONTROLLER_OTHER_LDFLAGS = -framework "CoreBluetooth"

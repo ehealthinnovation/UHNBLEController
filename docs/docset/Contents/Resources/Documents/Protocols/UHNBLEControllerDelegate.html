@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>UHNBLEControllerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">UHNBLEController </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Centre for Global eHealth Innovation</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/bleController:characteristicNotAvailable:">- bleController:characteristicNotAvailable:</option>
+		
+		<option value="//api/name/bleController:didConnectWithPeripheral:withServices:andUUID:">- bleController:didConnectWithPeripheral:withServices:andUUID:</option>
+		
+		<option value="//api/name/bleController:didConnectWithPeripheral:withUUID:">- bleController:didConnectWithPeripheral:withUUID:</option>
+		
+		<option value="//api/name/bleController:didDisconnectFromPeripheral:">- bleController:didDisconnectFromPeripheral:</option>
+		
+		<option value="//api/name/bleController:didDiscoverCharacteristics:forService:">- bleController:didDiscoverCharacteristics:forService:</option>
+		
+		<option value="//api/name/bleController:didDiscoverPeripheral:RSSI:">- bleController:didDiscoverPeripheral:RSSI:</option>
+		
+		<option value="//api/name/bleController:didDiscoverServices:">- bleController:didDiscoverServices:</option>
+		
+		<option value="//api/name/bleController:didUpdateNotificationState:forCharacteristic:">- bleController:didUpdateNotificationState:forCharacteristic:</option>
+		
+		<option value="//api/name/bleController:didUpdateValue:forCharacteristic:">- bleController:didUpdateValue:forCharacteristic:</option>
+		
+		<option value="//api/name/bleController:didWriteValue:toCharacteristic:">- bleController:didWriteValue:toCharacteristic:</option>
+		
+		<option value="//api/name/bleController:failedNotificationUpdateToCharacteristic:">- bleController:failedNotificationUpdateToCharacteristic:</option>
+		
+		<option value="//api/name/bleController:failedReadOfCharacteristic:">- bleController:failedReadOfCharacteristic:</option>
+		
+		<option value="//api/name/bleController:failedToConnectWithPeripheral:">- bleController:failedToConnectWithPeripheral:</option>
+		
+		<option value="//api/name/bleController:failedWriteToCharacteristic:">- bleController:failedWriteToCharacteristic:</option>
+		
+		<option value="//api/name/bleController:serviceNotAvailable:">- bleController:serviceNotAvailable:</option>
+		
+		<option value="//api/name/bleControllerPairingFailed:">- bleControllerPairingFailed:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">UHNBLEControllerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>UHNBLEController.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The UHNBLEControllerDelegate protocol defines the methods that a delegate of a <a href="../Classes/UHNBLEController.html">UHNBLEController</a> object must adopt. The optional methods of the protocol allow the delegate to monitor the discovery and connectivity of peripheral devices. The required methods of the protocol indicates discovery, connectivity, and read/write request with the peripheral device.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/bleController:didDiscoverPeripheral:RSSI:" title="bleController:didDiscoverPeripheral:RSSI:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:didDiscoverPeripheral:RSSI:">&ndash;&nbsp;bleController:didDiscoverPeripheral:RSSI:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when a peripheral has been discovered</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> didDiscoverPeripheral:(NSString *)<em>deviceName</em> RSSI:(NSNumber *)<em>RSSI</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that discovered the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceName</code></th>
+						<td><p>The device name of the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>RSSI</code></th>
+						<td><p>The rssi power of the peripheral</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when a peripheral with the required services is discovered. If required peripherals were provided during instantiation, the only peripherals with all of those services will be notified to the delegate. If no required services were provided, all discovered peripherals will be notified to the delegate.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:didDisconnectFromPeripheral:" title="bleController:didDisconnectFromPeripheral:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:didDisconnectFromPeripheral:">&ndash;&nbsp;bleController:didDisconnectFromPeripheral:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when a peripheral was disconnected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> didDisconnectFromPeripheral:(NSString *)<em>deviceName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceName</code></th>
+						<td><p>The device name of the peripheral</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when a peripheral is disconnected</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:failedToConnectWithPeripheral:" title="bleController:failedToConnectWithPeripheral:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:failedToConnectWithPeripheral:">&ndash;&nbsp;bleController:failedToConnectWithPeripheral:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when a peripheral failed to connect</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> failedToConnectWithPeripheral:(NSString *)<em>deviceName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that discovered the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceName</code></th>
+						<td><p>The device name of the peripheral</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when a peripheral failed to connect</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:didUpdateNotificationState:forCharacteristic:" title="bleController:didUpdateNotificationState:forCharacteristic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:didUpdateNotificationState:forCharacteristic:">&ndash;&nbsp;bleController:didUpdateNotificationState:forCharacteristic:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when the peripheral did update a characteristic notification state</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> didUpdateNotificationState:(BOOL)<em>notify</em> forCharacteristic:(NSString *)<em>characteristicUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notify</code></th>
+						<td><p>The current state of the characteristic notification/indication</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>characteristicUUID</code></th>
+						<td><p>A <code>NSString</code> representing the UUID of the characteristic</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when the peripheral successfully updated the notification state of a characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:didWriteValue:toCharacteristic:" title="bleController:didWriteValue:toCharacteristic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:didWriteValue:toCharacteristic:">&ndash;&nbsp;bleController:didWriteValue:toCharacteristic:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when the peripheral did complete a successful write to a characteristic</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> didWriteValue:(NSData *)<em>value</em> toCharacteristic:(NSString *)<em>characteristicUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>The value that was written to the characteristic</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>characteristicUUID</code></th>
+						<td><p>A <code>NSString</code> representing the UUID of the characteristic</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when a value was successfully written to a characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:didUpdateValue:forCharacteristic:" title="bleController:didUpdateValue:forCharacteristic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:didUpdateValue:forCharacteristic:">&ndash;&nbsp;bleController:didUpdateValue:forCharacteristic:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when the peripheral did update the value of a characteristic (either read or notified/indicated)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> didUpdateValue:(NSData *)<em>value</em> forCharacteristic:(NSString *)<em>characteristicUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>The value that was written to the characteristic</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>characteristicUUID</code></th>
+						<td><p>A <code>NSString</code> representing the UUID of the characteristic</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when a value was successfully updated for a characteristic. Values are updated with either reads or notifications/indications</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:didConnectWithPeripheral:withUUID:" title="bleController:didConnectWithPeripheral:withUUID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:didConnectWithPeripheral:withUUID:">&ndash;&nbsp;bleController:didConnectWithPeripheral:withUUID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when a peripheral did connect</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> didConnectWithPeripheral:(NSString *)<em>deviceName</em> withUUID:(NSUUID *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceName</code></th>
+						<td><p>The device name of the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>A <code>NSUUID</code> with the uuid of the peripheral</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when the peripheral is connected</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:didConnectWithPeripheral:withServices:andUUID:" title="bleController:didConnectWithPeripheral:withServices:andUUID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:didConnectWithPeripheral:withServices:andUUID:">&ndash;&nbsp;bleController:didConnectWithPeripheral:withServices:andUUID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when a peripheral did connect</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> didConnectWithPeripheral:(NSString *)<em>deviceName</em> withServices:(NSArray *)<em>serviceUUIDs</em> andUUID:(NSUUID *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceName</code></th>
+						<td><p>The device name of the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceUUIDs</code></th>
+						<td><p>An array of <code>NSString</code> representing the UUID of the services available for the peripheral. This array includes all the provided required services and potentially additional services.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>A <code>NSUUID</code> with the uuid of the peripheral</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked if required services were provided during instantiation after the discovery of the required services. If this method is invoked, it indicates that a request to discover all charactieristic for the required services has been initiated.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:didDiscoverServices:" title="bleController:didDiscoverServices:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:didDiscoverServices:">&ndash;&nbsp;bleController:didDiscoverServices:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when services were discovered for the peripheral</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> didDiscoverServices:(NSArray *)<em>serviceUUIDs</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceUUIDs</code></th>
+						<td><p>An array of <code>NSString</code> representing the UUID of the services available for the peripheral.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when services were discovered for the peripheral</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:didDiscoverCharacteristics:forService:" title="bleController:didDiscoverCharacteristics:forService:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:didDiscoverCharacteristics:forService:">&ndash;&nbsp;bleController:didDiscoverCharacteristics:forService:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when characteristics were discovered for the peripheral</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> didDiscoverCharacteristics:(NSArray *)<em>characteristicUUIDs</em> forService:(NSString *)<em>serviceUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>characteristicUUIDs</code></th>
+						<td><p>An array of <code>NSString</code> representing the characteristic UUIDs</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceUUID</code></th>
+						<td><p>A <code>NSString</code> representing the UUID of the service</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when characteristics were discovered for the peripheral.  If required services are provided with instantiation of the <a href="../Classes/UHNBLEController.html">UHNBLEController</a>, it is suggested to start making requests with the connected peripheral after the <a href="#//api/name/bleController:didDiscoverCharacteristics:forService:"><code>[UHNBLEControllerDelegate bleController:didDiscoverCharacteristics:forService:]</code></a> event is received.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:serviceNotAvailable:" title="bleController:serviceNotAvailable:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:serviceNotAvailable:">&ndash;&nbsp;bleController:serviceNotAvailable:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when the requested service is not available for the peripheral</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> serviceNotAvailable:(NSString *)<em>serviceUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceUUID</code></th>
+						<td><p>A <code>NSString</code> representing the UUID of the service</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when a requested service has not been discovered or is not available in the peripheral</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:characteristicNotAvailable:" title="bleController:characteristicNotAvailable:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:characteristicNotAvailable:">&ndash;&nbsp;bleController:characteristicNotAvailable:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when the requested characteristic is not available for the peripheral</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> characteristicNotAvailable:(NSString *)<em>characteristicUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>characteristicUUID</code></th>
+						<td><p>A <code>NSString</code> representing the UUID of the characteristic</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when a requested characteristic has not been discovered or is not available in the peripheral</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:failedWriteToCharacteristic:" title="bleController:failedWriteToCharacteristic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:failedWriteToCharacteristic:">&ndash;&nbsp;bleController:failedWriteToCharacteristic:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when a write to characteristic request failed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> failedWriteToCharacteristic:(NSString *)<em>characteristicUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>characteristicUUID</code></th>
+						<td><p>A <code>NSString</code> representing the UUID of the characteristic</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when the peripheral failed to write to a characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:failedReadOfCharacteristic:" title="bleController:failedReadOfCharacteristic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:failedReadOfCharacteristic:">&ndash;&nbsp;bleController:failedReadOfCharacteristic:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when a read from characteristic request failed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> failedReadOfCharacteristic:(NSString *)<em>characteristicUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>characteristicUUID</code></th>
+						<td><p>A <code>NSString</code> representing the UUID of the characteristic</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when the peripheral failed to read a characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleController:failedNotificationUpdateToCharacteristic:" title="bleController:failedNotificationUpdateToCharacteristic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleController:failedNotificationUpdateToCharacteristic:">&ndash;&nbsp;bleController:failedNotificationUpdateToCharacteristic:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when a update notification state request failed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleController:(UHNBLEController *)<em>controller</em> failedNotificationUpdateToCharacteristic:(NSString *)<em>characteristicUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>characteristicUUID</code></th>
+						<td><p>A <code>NSString</code> representing the UUID of the characteristic</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked when the peripheral failed to update the notification state of a characteristic</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bleControllerPairingFailed:" title="bleControllerPairingFailed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bleControllerPairingFailed:">&ndash;&nbsp;bleControllerPairingFailed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Notifies the delegate when pairing failed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)bleControllerPairingFailed:(UHNBLEController *)<em>controller</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>controller</code></th>
+						<td><p>The <a href="../Classes/UHNBLEController.html"><code>UHNBLEController</code></a> that is managing the peripheral</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked after making a request to the peripheral, but the request failed due to pairing issues.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UHNBLEController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Centre for Global eHealth Innovation. All rights reserved. Updated: 2015-02-09</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

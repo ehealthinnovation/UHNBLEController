@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/CBUUID+Extension.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/CBUUID(Extension)</TokenIdentifier>
+			<Abstract type="html">CBUUID+Extension provides convenience methods for comparing and converting to strings</Abstract>
+			<DeclaredIn>CBUUID+Extension.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CBUUID/isEqualToCBUUID:</TokenIdentifier>
+			<Abstract type="html">  
+Checks if the receiver is equal to the given CBUUID</Abstract>
+			<DeclaredIn>CBUUID+Extension.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqualToCBUUID:(CBUUID *)uuid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uuid</Name>
+					<Abstract type="html">The CBUUID with which to compare the receiver.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if uuid is equivalent to the receiver</Abstract></ReturnValue>
+			<Anchor>//api/name/isEqualToCBUUID:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CBUUID/toCharString</TokenIdentifier>
+			<Abstract type="html">Converts the receiver to a char * string</Abstract>
+			<DeclaredIn>CBUUID+Extension.h</DeclaredIn>
+			
+			<Declaration>- (const char *)toCharString</Declaration>
+			
+			<ReturnValue><Abstract type="html">The receiver as a char * string</Abstract></ReturnValue>
+			<Anchor>//api/name/toCharString</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CBUUID/toString</TokenIdentifier>
+			<Abstract type="html">Converts the receiver to an NSString</Abstract>
+			<DeclaredIn>CBUUID+Extension.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)toString</Declaration>
+			
+			<ReturnValue><Abstract type="html">The receiver as a NSString</Abstract></ReturnValue>
+			<Anchor>//api/name/toString</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -10,19 +10,21 @@
 Pod::Spec.new do |s|
   s.name             = "UHNBLEController"
   s.version          = "0.1.0"
-  s.summary          = "A short description of UHNBLEController."
+  s.summary          = "A general BLE library that provides helpers for common task and the generic record access control point service."
   s.description      = <<-DESC
-                       An optional longer description of UHNBLEController
+                       UHNBLEController provides a number of helpers, as listed below
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       * parsing BLE characteristics to standard types
+                       * record access control point commands and parsing
+                       * connecting with a BLE peripheral advertising specific services
+
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/UHNBLEController"
+  s.homepage         = "https://github.ehealthinnovation.org/JDRF/UHNBLEController"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Nathaniel Hamming" => "nhamming@ehealthinnovation.org" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/UHNBLEController.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.ehealthinnovation.org/JDRF/UHNBLEController.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/NateHam80'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -33,6 +35,6 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'CoreBluetooth'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

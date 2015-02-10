@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+ConvertionExtensions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(ConvertionExtensions)</TokenIdentifier>
+			<Abstract type="html">NSData+ConvertionExtensions converts NSDate bytes to standard types (float, NSUInteger, NSString, NSDate)</Abstract>
+			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/shortFloatToFloat</TokenIdentifier>
+			<Abstract type="html">Converts an NSData representing a short float to float</Abstract>
+			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (float)shortFloatToFloat</Declaration>
+			
+			<ReturnValue><Abstract type="html">The float representaiton of the short float value</Abstract></ReturnValue>
+			<Anchor>//api/name/shortFloatToFloat</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/shortFloatAtRange:</TokenIdentifier>
+			<Abstract type="html">Converts the short float represented by the bytes in the given range to a float</Abstract>
+			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (float)shortFloatAtRange:(NSRange)range</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>range</Name>
+					<Abstract type="html">The range of the bytes to convert</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The float value of the short float represented by the bytes</Abstract></ReturnValue>
+			<Anchor>//api/name/shortFloatAtRange:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/unsignedIntegerAtRange:</TokenIdentifier>
+			<Abstract type="html">Converts the bytes in the given range to an unsigned integer value</Abstract>
+			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)unsignedIntegerAtRange:(NSRange)range</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>range</Name>
+					<Abstract type="html">The range of the bytes to convert</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The unsigned integer represented by the bytes</Abstract></ReturnValue>
+			<Anchor>//api/name/unsignedIntegerAtRange:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/integerAtRange:</TokenIdentifier>
+			<Abstract type="html">Converts the bytes in the given range to an integer value</Abstract>
+			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)integerAtRange:(NSRange)range</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>range</Name>
+					<Abstract type="html">The range of the bytes to convert</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The integer represented by the bytes</Abstract></ReturnValue>
+			<Anchor>//api/name/integerAtRange:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/stringAtRange:</TokenIdentifier>
+			<Abstract type="html">Converts the bytes in the given range to a string</Abstract>
+			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)stringAtRange:(NSRange)range</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>range</Name>
+					<Abstract type="html">The range of the bytes to convert</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The string represented by the bytes</Abstract></ReturnValue>
+			<Anchor>//api/name/stringAtRange:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/parseDateFromStringWithFormat:andRange:</TokenIdentifier>
+			<Abstract type="html">Converts the bytes in the given range to a date using the given string format</Abstract>
+			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)parseDateFromStringWithFormat:(NSString *)dateFormat andRange:(NSRange)range</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dateFormat</Name>
+					<Abstract type="html">The format of the date</Abstract>
+				</Parameter><Parameter>
+					<Name>range</Name>
+					<Abstract type="html">The range of the bytes to convert</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The date represented by the bytes for the given format</Abstract></ReturnValue>
+			<Anchor>//api/name/parseDateFromStringWithFormat:andRange:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/parseDateWithSecondsSinceReferenceDateWithRange:</TokenIdentifier>
+			<Abstract type="html">Converts the bytes in the given range to a date</Abstract>
+			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)parseDateWithSecondsSinceReferenceDateWithRange:(NSRange)range</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>range</Name>
+					<Abstract type="html">The range of the bytes to convert</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The date since the reference data represented by the bytes</Abstract></ReturnValue>
+			<Anchor>//api/name/parseDateWithSecondsSinceReferenceDateWithRange:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
