@@ -1,25 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gM1-mj-ddF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Peripherals View Controller-->
+        <scene sceneID="L8e-Lz-m1B">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="UHNViewController" sceneMemberID="viewController">
+                <viewController id="7HT-J0-hBf" customClass="PeripheralsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="oeP-9k-f1d"/>
+                        <viewControllerLayoutGuide type="bottom" id="n64-fm-ZYL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="0oF-iE-pCl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7B1-hq-wMZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7HT-J0-hBf" id="hTm-g5-B4g"/>
+                                    <outlet property="delegate" destination="7HT-J0-hBf" id="g4y-K6-TgM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7B1-hq-wMZ" firstAttribute="leading" secondItem="0oF-iE-pCl" secondAttribute="leadingMargin" constant="-16" id="DPQ-lH-H8g"/>
+                            <constraint firstItem="n64-fm-ZYL" firstAttribute="top" secondItem="7B1-hq-wMZ" secondAttribute="bottom" id="O9l-2E-Ox1"/>
+                            <constraint firstItem="7B1-hq-wMZ" firstAttribute="top" secondItem="oeP-9k-f1d" secondAttribute="bottom" constant="-64" id="UPj-qQ-Vwa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7B1-hq-wMZ" secondAttribute="trailing" constant="-16" id="vcm-rv-VNc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ODY-bq-CKE"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="7B1-hq-wMZ" id="VdZ-OJ-ild"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vf4-6P-Wap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="D90-4X-v0n">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </objects>
+            <point key="canvasLocation" x="151" y="-404"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nDe-Pf-bZ6">
+            <objects>
+                <navigationController id="gM1-mj-ddF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AhO-Ir-oIr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7HT-J0-hBf" kind="relationship" relationship="rootViewController" id="e82-tP-3Im"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2y-lh-tRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320" y="-404"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -242,7 +242,7 @@
  @discussion This method is invoked when a peripheral with the required services is discovered. If required peripherals were provided during instantiation, the only peripherals with all of those services will be notified to the delegate. If no required services were provided, all discovered peripherals will be notified to the delegate.
  
  */
-- (void)bleController:(UHNBLEController*)controller didDiscoverPeripheral:(NSString*)deviceName RSSI:(NSNumber*)RSSI;
+- (void)bleController:(UHNBLEController*)controller didDiscoverPeripheral:(NSString*)deviceName services:(NSArray*)serviceUUIDs RSSI:(NSNumber*)RSSI;
 
 /**
  Notifies the delegate when a peripheral was disconnected
@@ -265,6 +265,8 @@
  
  */
 - (void)bleController:(UHNBLEController*)controller failedToConnectWithPeripheral:(NSString*)deviceName;
+
+@optional
 
 /**
  Notifies the delegate when the peripheral did update a characteristic notification state
@@ -301,8 +303,6 @@
  
  */
 - (void)bleController:(UHNBLEController*)controller didUpdateValue:(NSData*)value forCharacteristic:(NSString*)characteristicUUID;
-
-@optional
 
 /**
  Notifies the delegate when a peripheral did connect

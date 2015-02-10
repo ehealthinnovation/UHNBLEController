@@ -1,14 +1,13 @@
 //
-//  UHNAppDelegate.m
-//  UHNBLEController
+//  AppDelegate.m
+//  UHNBLEDemo
 //
 //  Created by CocoaPods on 02/09/2015.
-//  Copyright (c) 2014 Nathaniel Hamming. All rights reserved.
-//
+//  Copyright (c) 2015 University Health Network.
 
-#import "UHNAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation UHNAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

@@ -384,17 +384,22 @@
 {    
     DLog(@"%s: %@ %@ advertisementData: %@ RSSI: %@", __PRETTY_FUNCTION__, central, peripheral, advertisementData, RSSI);
 
+    NSArray *advertisedServices = advertisementData[CBAdvertisementDataServiceUUIDsKey];
+    NSMutableArray *adServicesUUIDs = [NSMutableArray array];
+    for (CBUUID *service in advertisedServices) {
+        NSString *serviceUUID = [service UUIDString];
+        [adServicesUUIDs addObject: serviceUUID];
+    }
+    
     // confirm the device has all required services
     BOOL hasRequiredServices = YES;
-    NSArray *advertisedServices = advertisementData[CBAdvertisementDataServiceUUIDsKey];
     for (NSString *requireService in self.requiredServices) {
-        CBUUID *requireServiceUUID = [CBUUID UUIDWithString: requireService];
-        for (NSInteger i = 0; i < [advertisedServices count]; i++) {
-            CBUUID *adServiceUUID = [advertisedServices objectAtIndex:i];
-            if ([adServiceUUID isEqualToCBUUID: requireServiceUUID]) {
+        for (NSInteger i = 0; i < [adServicesUUIDs count]; i++) {
+            NSString *adServiceUUID = [adServicesUUIDs objectAtIndex:i];
+            if ([adServiceUUID isEqualToString: requireService]) {
                 break;
             }
-            if (i == [advertisedServices count] - 1) {
+            if (i == [adServicesUUIDs count] - 1) {
                 // did not find a required service
                 hasRequiredServices = NO;
             }
@@ -412,9 +417,9 @@
         if ([self.discoveredPeripheralList indexOfObject: peripheral] == NSNotFound) {
             // only store and report newly discovered devices
             [self.discoveredPeripheralList addObject: peripheral];
-            if ([self.delegate respondsToSelector: @selector(bleController:didDiscoverPeripheral:RSSI:)]) {
+            if ([self.delegate respondsToSelector: @selector(bleController:didDiscoverPeripheral:services:RSSI:)]) {
                 // note: a device name is available in both: peripheral.name and advertisementData[CBAdvertisementDataLocalNameKey], but they may be different
-                [self.delegate bleController: self didDiscoverPeripheral: peripheral.name RSSI: RSSI];
+                [self.delegate bleController: self didDiscoverPeripheral: peripheral.name services: adServicesUUIDs RSSI: RSSI];
             }
         }
     }
