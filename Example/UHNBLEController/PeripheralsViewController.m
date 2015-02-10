@@ -11,6 +11,9 @@
 
 @interface PeripheralsViewController () <UITabBarControllerDelegate, UITableViewDataSource, UHNBLEControllerDelegate>
 @property(nonatomic,strong) IBOutlet UITableView *tableView;
+@property(nonatomic,strong) IBOutlet UIView *messageView;
+@property(nonatomic,strong) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property(nonatomic,strong) IBOutlet UILabel *messageLabel;
 @property(nonatomic,strong) UHNBLEController *bleController;
 @property(nonatomic,strong) NSMutableArray *peripheralList;
 @property(nonatomic,strong) NSMutableDictionary *selectedPeripheralDetails;
@@ -23,11 +26,13 @@
     [super viewDidLoad];
     self.title = @"Select Peripheral";
     self.bleController = [[UHNBLEController alloc] initWithDelegate: self requiredServices: nil];
+    self.messageView.center = self.tableView.center;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.messageView removeFromSuperview];
     if ([self.bleController isPerpherialConnected]) {
         [self.bleController cancelConnection];
     }
@@ -86,8 +91,10 @@
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.selectedPeripheralDetails = [self.peripheralList objectAtIndex: indexPath.row];
     [self.bleController connectToDiscoveredPeripheral: self.selectedPeripheralDetails[kPeripheralDeviceName]];
-    
-    
+    self.activityIndicator.hidden = NO;
+    self.messageLabel.text = @"Interrogating";
+    [self.view addSubview: self.messageView];
+    self.view.userInteractionEnabled = NO;
 }
 
 #pragma mark - BLE Controller Delegate Methods
@@ -112,12 +119,18 @@
 
 - (void)bleController:(UHNBLEController*)controller didDisconnectFromPeripheral:(NSString*)deviceName;
 {
-    //NOP
+    self.view.userInteractionEnabled = YES;
+    self.activityIndicator.hidden = YES;
+    self.messageLabel.text = @"Peripheral Disconnected";
+    [self.messageView performSelector: @selector(removeFromSuperview) withObject:nil afterDelay: 1.];
 }
 
 - (void)bleController:(UHNBLEController*)controller failedToConnectWithPeripheral:(NSString*)deviceName;
 {
-    //NOP
+    self.view.userInteractionEnabled = YES;
+    self.activityIndicator.hidden = YES;
+    self.messageLabel.text = @"Connection Failed";
+    [self.messageView performSelector: @selector(removeFromSuperview) withObject:nil afterDelay: 1.];
 }
 
 - (void)bleController:(UHNBLEController*)controller didConnectWithPeripheral:(NSString*)deviceName withUUID:(NSUUID*)uuid;
