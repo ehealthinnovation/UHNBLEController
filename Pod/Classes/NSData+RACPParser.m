@@ -7,7 +7,7 @@
 //
 
 #import "NSData+RACPParser.h"
-#import "NSData+ConvertionExtensions.h"
+#import "NSData+ConversionExtensions.h"
 #import "UHNDebug.h"
 
 @implementation NSData (RACPParser)
@@ -20,13 +20,13 @@
         case kRACPOpCodeResponseStoredRecordsReportNumber:
         {
             NSUInteger numOfRecords = [self parseRACPResponseNumberOfRecords];
-            [responseDict setObject: [NSNumber numberWithUnsignedInteger: numOfRecords] forKey: kRACPKeyNumberOfRecords];
+            responseDict[kRACPKeyNumberOfRecords] = [NSNumber numberWithUnsignedInteger: numOfRecords];
             break;
         }
         case kRACPOpCodeResponse:
         {
             NSDictionary *responseDetails = [self parseRACPResponseCodeDetails];
-            [responseDict setObject: responseDetails forKey: kRACPKeyResponseCodeDetails];
+            responseDict[kRACPKeyResponseCodeDetails] = responseDetails;
             break;
         }
         default:

@@ -49,7 +49,7 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportStoreRecordsLessThanOrEqualToTimeOffset: (uint16_t)timeOffset;
++ (NSData*)reportStoredRecordsLessThanOrEqualToTimeOffset: (uint16_t)timeOffset;
 
 /**
  Command for reporting stored records greater than of equal to provided timeOffset
@@ -58,7 +58,7 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportStoreRecordsGreaterThanOrEqualToimeOffset: (uint16_t)timeOffset;
++ (NSData*)reportStoredRecordsGreaterThanOrEqualToimeOffset: (uint16_t)timeOffset;
 
 /**
  Command for reporting stored records between a max and min time offset
@@ -68,21 +68,21 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportRecordsBetween: (uint16_t)maxTimeOffset and: (uint16_t)minTimeOffset;
++ (NSData*)reportStoredRecordsBetween: (uint16_t)maxTimeOffset and: (uint16_t)minTimeOffset;
 
 /**
  Command for reporting the first stored record
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportFirstRecord;
++ (NSData*)reportFirstStoredRecord;
 
 /**
  Command for reporting the last stored record
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportLastRecord;
++ (NSData*)reportLastStoredRecord;
 
 ///-------------------------------------
 /// @name Delete Stored Records Commands
@@ -103,7 +103,7 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)deleteStoreRecordsLessThanOrEqualToTimeOffset: (uint16_t)timeOffset;
++ (NSData*)deleteStoredRecordsLessThanOrEqualToTimeOffset: (uint16_t)timeOffset;
 
 /**
  Command for deleting stored records greater than of equal to provided timeOffset
@@ -112,7 +112,7 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)deleteStoreRecordsGreaterThanOrEqualToTimeOffset: (uint16_t)timeOffset;
++ (NSData*)deleteStoredRecordsGreaterThanOrEqualToTimeOffset: (uint16_t)timeOffset;
 
 /**
  Command for deleting stored records between a max and min time offset
@@ -122,21 +122,21 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)deleteRecordsBetween: (uint16_t)minTimeOffset and: (uint16_t)maxTimeOffset;
++ (NSData*)deleteStoredRecordsBetween: (uint16_t)minTimeOffset and: (uint16_t)maxTimeOffset;
 
 /**
  Command for deleting the first stored record
  
  @return The command as a `NSData` object
  */
-+ (NSData*)deleteFirstRecord;
++ (NSData*)deleteFirstStoredRecord;
 
 /**
  Command for deleting the last stored record
  
  @return The command as a `NSData` object
  */
-+ (NSData*)deleteLastRecord;
++ (NSData*)deleteLastStoredRecord;
 
 ///-----------------------------------------------
 /// @name Report Number of Stored Records Commands
@@ -156,7 +156,7 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportNumberOfStoreRecordsLessThanOrEqualToTimeOffset: (uint16_t)timeOffset;
++ (NSData*)reportNumberOfStoredRecordsLessThanOrEqualToTimeOffset: (uint16_t)timeOffset;
 
 /**
  Command for reporting the number of stored records greater than of equal to provided timeOffset
@@ -165,7 +165,7 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportNumberOfStoreRecordsGreaterThanOrEqualToimeOffset: (uint16_t)timeOffset;
++ (NSData*)reportNumberOfStoredRecordsGreaterThanOrEqualToTimeOffset: (uint16_t)timeOffset;
 
 /**
  Command for reporting the number of stored records between a max and min time offset
@@ -175,21 +175,21 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportNumberOfRecordsBetween: (uint16_t)minTimeOffset and: (uint16_t)maxTimeOffset;
++ (NSData*)reportNumberOfStoredRecordsBetween: (uint16_t)minTimeOffset and: (uint16_t)maxTimeOffset;
 
 /**
  Command for reporting the number of first stored records
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportNumberOfFirstRecord;
++ (NSData*)reportNumberOfFirstStoredRecord;
 
 /**
  Command for reporting the number of last stored records
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportNumberOfLastRecord;
++ (NSData*)reportNumberOfLastStoredRecord;
 
 ///-------------------------------------
 /// @name Abort Command

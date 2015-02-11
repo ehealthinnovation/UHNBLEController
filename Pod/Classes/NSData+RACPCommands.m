@@ -14,96 +14,96 @@
 
 + (NSData*)reportAllStoredRecords;
 {
-    return [self allRecordsWithOpCode: kRACPOpCodeStoredRecordsReport];
+    return [self allStoredRecordsWithOpCode: kRACPOpCodeStoredRecordsReport];
 }
 
-+ (NSData*)reportStoreRecordsLessThanOrEqualToTimeOffset:(uint16_t)timeOffset;
++ (NSData*)reportStoredRecordsLessThanOrEqualToTimeOffset:(uint16_t)timeOffset;
 {
-    return [self recordsLessThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReport filter: kRACPFilterTypeTimeOffset];
+    return [self storedRecordsLessThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReport filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)reportStoreRecordsGreaterThanOrEqualToimeOffset:(uint16_t)timeOffset;
++ (NSData*)reportStoredRecordsGreaterThanOrEqualToimeOffset:(uint16_t)timeOffset;
 {
-    return [self recordsGreaterThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReport filter: kRACPFilterTypeTimeOffset];
+    return [self storedRecordsGreaterThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReport filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)reportRecordsBetween:(uint16_t)minTimeOffset and:(uint16_t)maxTimeOffset;
++ (NSData*)reportStoredRecordsBetween:(uint16_t)minTimeOffset and:(uint16_t)maxTimeOffset;
 {
-    return [self recordsBetween: minTimeOffset and: maxTimeOffset opCode: kRACPOpCodeStoredRecordsReport filter: kRACPFilterTypeTimeOffset];
+    return [self storedRecordsBetween: minTimeOffset and: maxTimeOffset opCode: kRACPOpCodeStoredRecordsReport filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)reportFirstRecord;
++ (NSData*)reportFirstStoredRecord;
 {
-    return [self firstRecordWithOpCode: kRACPOpCodeStoredRecordsReport];
+    return [self firstStoredRecordWithOpCode: kRACPOpCodeStoredRecordsReport];
 }
 
-+ (NSData*)reportLastRecord;
++ (NSData*)reportLastStoredRecord;
 {
-    return [self lastRecordWithOpCode: kRACPOpCodeStoredRecordsReport];
+    return [self lastStoredRecordWithOpCode: kRACPOpCodeStoredRecordsReport];
 }
 
 #pragma mark - Delete record methods
 
 + (NSData*)deleteAllStoredRecords;
 {
-    return [self allRecordsWithOpCode: kRACPOpCodeStoredRecordsDelete];
+    return [self allStoredRecordsWithOpCode: kRACPOpCodeStoredRecordsDelete];
 }
 
-+ (NSData*)deleteStoreRecordsLessThanOrEqualToTimeOffset:(uint16_t)timeOffset;
++ (NSData*)deleteStoredRecordsLessThanOrEqualToTimeOffset:(uint16_t)timeOffset;
 {
-    return [self recordsLessThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsDelete filter: kRACPFilterTypeTimeOffset];
+    return [self storedRecordsLessThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsDelete filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)deleteStoreRecordsGreaterThanOrEqualToTimeOffset:(uint16_t)timeOffset;
++ (NSData*)deleteStoredRecordsGreaterThanOrEqualToTimeOffset:(uint16_t)timeOffset;
 {
-    return [self recordsGreaterThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsDelete filter: kRACPFilterTypeTimeOffset];
+    return [self storedRecordsGreaterThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsDelete filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)deleteRecordsBetween:(uint16_t)minTimeOffset and:(uint16_t)maxTimeOffset;
++ (NSData*)deleteStoredRecordsBetween:(uint16_t)minTimeOffset and:(uint16_t)maxTimeOffset;
 {
-    return [self recordsBetween: minTimeOffset and: maxTimeOffset opCode: kRACPOpCodeStoredRecordsDelete filter: kRACPFilterTypeTimeOffset];
+    return [self storedRecordsBetween: minTimeOffset and: maxTimeOffset opCode: kRACPOpCodeStoredRecordsDelete filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)deleteFirstRecord;
++ (NSData*)deleteFirstStoredRecord;
 {
-    return [self firstRecordWithOpCode: kRACPOpCodeStoredRecordsDelete];
+    return [self firstStoredRecordWithOpCode: kRACPOpCodeStoredRecordsDelete];
 }
 
-+ (NSData*)deleteLastRecord;
++ (NSData*)deleteLastStoredRecord;
 {
-    return [self lastRecordWithOpCode: kRACPOpCodeStoredRecordsDelete];
+    return [self lastStoredRecordWithOpCode: kRACPOpCodeStoredRecordsDelete];
 }
 
 #pragma mark - Report number of records methods
 
 + (NSData*)reportNumberOfAllStoredRecords;
 {
-    return [self allRecordsWithOpCode: kRACPOpCodeStoredRecordsReportNumber];
+    return [self allStoredRecordsWithOpCode: kRACPOpCodeStoredRecordsReportNumber];
 }
 
-+ (NSData*)reportNumberOfStoreRecordsLessThanOrEqualToTimeOffset:(uint16_t)timeOffset;
++ (NSData*)reportNumberOfStoredRecordsLessThanOrEqualToTimeOffset:(uint16_t)timeOffset;
 {
-    return [self recordsLessThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReportNumber filter: kRACPFilterTypeTimeOffset];
+    return [self storedRecordsLessThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReportNumber filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)reportNumberOfStoreRecordsGreaterThanOrEqualToimeOffset:(uint16_t)timeOffset;
++ (NSData*)reportNumberOfStoredRecordsGreaterThanOrEqualToTimeOffset:(uint16_t)timeOffset;
 {
-    return [self recordsGreaterThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReportNumber filter: kRACPFilterTypeTimeOffset];
+    return [self storedRecordsGreaterThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReportNumber filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)reportNumberOfRecordsBetween:(uint16_t)minTimeOffset and:(uint16_t)maxTimeOffset;
++ (NSData*)reportNumberOfStoredRecordsBetween:(uint16_t)minTimeOffset and:(uint16_t)maxTimeOffset;
 {
-    return [self recordsBetween: minTimeOffset and: maxTimeOffset opCode: kRACPOpCodeStoredRecordsReportNumber filter: kRACPFilterTypeTimeOffset];
+    return [self storedRecordsBetween: minTimeOffset and: maxTimeOffset opCode: kRACPOpCodeStoredRecordsReportNumber filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)reportNumberOfFirstRecord;
++ (NSData*)reportNumberOfFirstStoredRecord;
 {
-    return [self firstRecordWithOpCode: kRACPOpCodeStoredRecordsReportNumber];
+    return [self firstStoredRecordWithOpCode: kRACPOpCodeStoredRecordsReportNumber];
 }
 
-+ (NSData*)reportNumberOfLastRecord;
++ (NSData*)reportNumberOfLastStoredRecord;
 {
-    return [self lastRecordWithOpCode: kRACPOpCodeStoredRecordsReportNumber];
+    return [self lastStoredRecordWithOpCode: kRACPOpCodeStoredRecordsReportNumber];
 }
 
 #pragma mark - Abort method
@@ -115,32 +115,32 @@
 
 #pragma mark - Private methods
 
-+ (NSData*)allRecordsWithOpCode:(RACPOpCode)opCode;
++ (NSData*)allStoredRecordsWithOpCode:(RACPOpCode)opCode;
 {
     return [NSData dataWithBytes: (char[]){opCode, kRACPOperatorRecordsAll} length: 2];
 }
 
-+ (NSData*)recordsLessThanEqualTo:(uint16_t)operand opCode:(RACPOpCode)opCode filter:(RACPFilterType)filter;
++ (NSData*)storedRecordsLessThanEqualTo:(uint16_t)operand opCode:(RACPOpCode)opCode filter:(RACPFilterType)filter;
 {
     return [NSData dataWithBytes: (char[]){opCode, kRACPOperatorLessThanEqualTo, filter, operand, (operand >> 8)} length: 5];
 }
 
-+ (NSData*)recordsGreaterThanEqualTo:(uint16_t)operand opCode:(RACPOpCode)opCode filter:(RACPFilterType)filter;
++ (NSData*)storedRecordsGreaterThanEqualTo:(uint16_t)operand opCode:(RACPOpCode)opCode filter:(RACPFilterType)filter;
 {
     return [NSData dataWithBytes: (char[]){opCode, kRACPOperatorGreaterThanEqualTo, filter, operand, (operand >> 8)} length: 5];
 }
 
-+ (NSData*)recordsBetween:(uint16_t)minOperand and:(uint16_t)maxOperand opCode:(RACPOpCode)opCode filter:(RACPFilterType)filter
++ (NSData*)storedRecordsBetween:(uint16_t)minOperand and:(uint16_t)maxOperand opCode:(RACPOpCode)opCode filter:(RACPFilterType)filter
 {
     return [NSData dataWithBytes: (char[]){opCode, kRACPOperatorWithinRange, filter, minOperand, (minOperand >> 8), maxOperand, (maxOperand >> 8)} length: 7];
 }
 
-+ (NSData*)firstRecordWithOpCode:(RACPOpCode)opCode;
++ (NSData*)firstStoredRecordWithOpCode:(RACPOpCode)opCode;
 {
     return [NSData dataWithBytes: (char[]){opCode, kRACPOperatorRecordFirst} length: 2];
 }
 
-+ (NSData*)lastRecordWithOpCode:(RACPOpCode)opCode;
++ (NSData*)lastStoredRecordWithOpCode:(RACPOpCode)opCode;
 {
     return [NSData dataWithBytes: (char[]){opCode, kRACPOperatorRecordLast} length: 2];
 }
