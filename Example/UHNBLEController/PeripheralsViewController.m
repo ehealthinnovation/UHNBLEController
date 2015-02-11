@@ -24,7 +24,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Select Peripheral";
+    self.title = NSLocalizedString(@"Select Peripheral", @"table header asking user to select a peripheral from the given list");
     self.bleController = [[UHNBLEController alloc] initWithDelegate: self requiredServices: nil];
     self.messageView.center = self.tableView.center;
 }
@@ -36,12 +36,6 @@
     if ([self.bleController isPerpherialConnected]) {
         [self.bleController cancelConnection];
     }
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table View Data Source Methods
@@ -58,7 +52,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"Peripherals Discovered";
+    return NSLocalizedString(@"Peripherals Discovered", @"table view header");
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -77,9 +71,9 @@
     cell.textLabel.text = peripheralDetails[kPeripheralDeviceName];
     NSArray *advertisedServices = peripheralDetails[kPeripheralAdvertisedServices];
     if (advertisedServices && [advertisedServices count]) {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld services advertised", [advertisedServices count]];
+        cell.detailTextLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%ld services advertised", @"count of services advertised by the peripheral"), [advertisedServices count]];
     } else {
-        cell.detailTextLabel.text = @"No services advertised";
+        cell.detailTextLabel.text = NSLocalizedString(@"No services advertised", @"indicating that the perihperal does not advertise any services");
     }
     return cell;
 }
@@ -92,7 +86,7 @@
     self.selectedPeripheralDetails = [self.peripheralList objectAtIndex: indexPath.row];
     [self.bleController connectToDiscoveredPeripheral: self.selectedPeripheralDetails[kPeripheralDeviceName]];
     self.activityIndicator.hidden = NO;
-    self.messageLabel.text = @"Interrogating";
+    self.messageLabel.text = NSLocalizedString(@"Interrogating", @"UI message indicating the app is blocked while getting all services and characteristics of the perpherial");
     [self.view addSubview: self.messageView];
     self.view.userInteractionEnabled = NO;
 }
@@ -106,12 +100,12 @@
     }
     
     if (!deviceName) {
-        deviceName = @"No device name available";
+        deviceName = NSLocalizedString(@"No device name available", @"Notice that the peripheral does not have a device name");
     }
 
     NSMutableDictionary *peripheralDetails = [NSMutableDictionary dictionaryWithObject: deviceName forKey: kPeripheralDeviceName];
     if (serviceUUIDs) {
-        [peripheralDetails setObject: serviceUUIDs forKey: kPeripheralAdvertisedServices];
+        peripheralDetails[kPeripheralAdvertisedServices] = serviceUUIDs;
     }
     [self.peripheralList addObject: peripheralDetails];
     [self.tableView reloadSections: [NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
@@ -121,7 +115,7 @@
 {
     self.view.userInteractionEnabled = YES;
     self.activityIndicator.hidden = YES;
-    self.messageLabel.text = @"Peripheral Disconnected";
+    self.messageLabel.text = NSLocalizedString(@"Peripheral Disconnected", @"UI Message indicating the peripheral disconnected unexpectantly");
     [self.messageView performSelector: @selector(removeFromSuperview) withObject:nil afterDelay: 1.];
 }
 
@@ -129,7 +123,7 @@
 {
     self.view.userInteractionEnabled = YES;
     self.activityIndicator.hidden = YES;
-    self.messageLabel.text = @"Connection Failed";
+    self.messageLabel.text = NSLocalizedString(@"Connection Failed", @"UI message indicating the connection to the peripheral failed");
     [self.messageView performSelector: @selector(removeFromSuperview) withObject:nil afterDelay: 1.];
 }
 
@@ -144,7 +138,7 @@
     for (NSString *serviceUUID in serviceUUIDs) {
         [serviceDetails addObject: @{kPeripheralServicesUUID: serviceUUID, kPeripheralServiceCharacteristics: [NSMutableArray array]}];
     }
-    [self.selectedPeripheralDetails setObject: serviceDetails forKey: kPeripheralServices];
+    self.selectedPeripheralDetails[kPeripheralServices] = serviceDetails;
     [self.bleController discoverAllCharacteristicsForService: [serviceUUIDs firstObject]];
 }
 
@@ -154,7 +148,7 @@
     for (int i = 0; i < [peripheralServices count]; i++) {
         NSMutableDictionary *serviceDetails = [peripheralServices[i] mutableCopy];
         if ([serviceUUID isEqualToString: serviceDetails[kPeripheralServicesUUID]]) {
-            [serviceDetails setObject: characteristicUUIDs forKey: kPeripheralServiceCharacteristics];
+            serviceDetails[kPeripheralServiceCharacteristics] = characteristicUUIDs;
             self.selectedPeripheralDetails[kPeripheralServices][i] = serviceDetails;
             if (i < [peripheralServices count] - 1) {
                 NSDictionary *nextService = peripheralServices[i+1];

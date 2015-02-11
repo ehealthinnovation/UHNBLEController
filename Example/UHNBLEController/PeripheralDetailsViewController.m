@@ -35,11 +35,6 @@
     [self.view addSubview: self.tableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 #pragma mark - Table View Data Source Methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -55,7 +50,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return [NSString stringWithFormat:@"Service: %@",[CBUUID UUIDWithString:self.peripheralServices[section][kPeripheralServicesUUID]]];
+    return [NSString stringWithFormat:NSLocalizedString(@"Service: %@", @"Table section header indicating the service for which the characteristics are available"),[CBUUID UUIDWithString:self.peripheralServices[section][kPeripheralServicesUUID]]];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -71,8 +66,8 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    CBUUID *characteric = [CBUUID UUIDWithString: self.peripheralServices[indexPath.section][kPeripheralServiceCharacteristics][indexPath.row]];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", characteric];
+    CBUUID *characteristic = [CBUUID UUIDWithString: self.peripheralServices[indexPath.section][kPeripheralServiceCharacteristics][indexPath.row]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", characteristic];
     return cell;
 }
 
