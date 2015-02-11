@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/CBCentralManager+StateString.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/CBCentralManager(StateString)</TokenIdentifier>
+			<Abstract type="html">CBCentralManager+StateString converts the state enum into a state string so memorization of the enum is not needed</Abstract>
+			<DeclaredIn>CBCentralManager+StateString.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CBCentralManager/stringForState:</TokenIdentifier>
+			<Abstract type="html">Converts the CBCentralManager state into a readable string</Abstract>
+			<DeclaredIn>CBCentralManager+StateString.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)stringForState:(CBCentralManagerState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The state of the CBCentralManager</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Readable string indicating the CBCentralManager state</Abstract></ReturnValue>
+			<Anchor>//api/name/stringForState:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

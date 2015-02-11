@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/UHNBLEController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/UHNBLEController</TokenIdentifier>
+			<Abstract type="html">  The UHNBLEController provides a simplified interface to Core Bluetooth (CB) by handling fault checking and removing ann CB specific details. Through the inteface and delegate protocol, one should be able to easily make requests of a BLE peripheral device.</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/setNotifyOnConnection:</TokenIdentifier>
+			<Abstract type="html">Indicates if the OS should notify the user when a peripheral is connected</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL notifyOnConnection</Declaration>
+			
+			
+			<Anchor>//api/name/notifyOnConnection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/notifyOnConnection</TokenIdentifier>
+			<Abstract type="html">Indicates if the OS should notify the user when a peripheral is connected</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL notifyOnConnection</Declaration>
+			
+			
+			<Anchor>//api/name/notifyOnConnection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNBLEController/notifyOnConnection</TokenIdentifier>
+			<Abstract type="html">Indicates if the OS should notify the user when a peripheral is connected</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL notifyOnConnection</Declaration>
+			
+			
+			<Anchor>//api/name/notifyOnConnection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/setNotifyOnDisconnection:</TokenIdentifier>
+			<Abstract type="html">Indicates if the OS should notify the user when a peripheral is disconnected</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL notifyOnDisconnection</Declaration>
+			
+			
+			<Anchor>//api/name/notifyOnDisconnection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/notifyOnDisconnection</TokenIdentifier>
+			<Abstract type="html">Indicates if the OS should notify the user when a peripheral is disconnected</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL notifyOnDisconnection</Declaration>
+			
+			
+			<Anchor>//api/name/notifyOnDisconnection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNBLEController/notifyOnDisconnection</TokenIdentifier>
+			<Abstract type="html">Indicates if the OS should notify the user when a peripheral is disconnected</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL notifyOnDisconnection</Declaration>
+			
+			
+			<Anchor>//api/name/notifyOnDisconnection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/setNotifyOnNotification:</TokenIdentifier>
+			<Abstract type="html">Indicates if the OS should notify the user when the peripheral has issued a notification or indication</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL notifyOnNotification</Declaration>
+			
+			
+			<Anchor>//api/name/notifyOnNotification</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/notifyOnNotification</TokenIdentifier>
+			<Abstract type="html">Indicates if the OS should notify the user when the peripheral has issued a notification or indication</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL notifyOnNotification</Declaration>
+			
+			
+			<Anchor>//api/name/notifyOnNotification</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNBLEController/notifyOnNotification</TokenIdentifier>
+			<Abstract type="html">Indicates if the OS should notify the user when the peripheral has issued a notification or indication</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL notifyOnNotification</Declaration>
+			
+			
+			<Anchor>//api/name/notifyOnNotification</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/setStoreLastConnectedDeviceID:</TokenIdentifier>
+			<Abstract type="html">Indicates if the last connected device should be stored for a future reconnection</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL storeLastConnectedDeviceID</Declaration>
+			
+			
+			<Anchor>//api/name/storeLastConnectedDeviceID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/storeLastConnectedDeviceID</TokenIdentifier>
+			<Abstract type="html">Indicates if the last connected device should be stored for a future reconnection</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL storeLastConnectedDeviceID</Declaration>
+			
+			
+			<Anchor>//api/name/storeLastConnectedDeviceID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UHNBLEController/storeLastConnectedDeviceID</TokenIdentifier>
+			<Abstract type="html">Indicates if the last connected device should be stored for a future reconnection</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL storeLastConnectedDeviceID</Declaration>
+			
+			
+			<Anchor>//api/name/storeLastConnectedDeviceID</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/initWithDelegate:requiredServices:</TokenIdentifier>
+			<Abstract type="html">UHNBLEController is initialized with a delegate and optional required services.</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDelegate:(id&lt;UHNBLEControllerDelegate&gt;)delegate requiredServices:(NSArray *)services</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">The delegate object that will received discovery, connectivity, and read/write events. This parameter is mandatory.</Abstract>
+				</Parameter><Parameter>
+					<Name>services</Name>
+					<Abstract type="html">The required services used to filter eligibility of discovered peripherals. Only peripherals that advertist all the required services will be deemed eligible and reported to the delegate. If services is nil, all peripherals discovered will be reported to the delegate.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithDelegate:requiredServices:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/startConnection</TokenIdentifier>
+			<Abstract type="html">Starts the connection process. If a peripheral was previously connected, it will try to reconnect to that peripheral. Otherwise, it starts a scan.</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)startConnection</Declaration>
+			
+			
+			<Anchor>//api/name/startConnection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/connectToDiscoveredPeripheral:</TokenIdentifier>
+			<Abstract type="html">Try to connect to a peripheral that was already discovered.</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)connectToDiscoveredPeripheral:(NSString *)deviceName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceName</Name>
+					<Abstract type="html">The name of device which has been previously discovered and with which the delegate would like to connect</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectToDiscoveredPeripheral:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/reconnectToPeripheralWithUUID:</TokenIdentifier>
+			<Abstract type="html">Try to reconnect with a peripheral that was previously connected</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)reconnectToPeripheralWithUUID:(NSUUID *)uuid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>uuid</Name>
+					<Abstract type="html">The NSUUID of the peripheral that was perviously connected</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reconnectToPeripheralWithUUID:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/cancelConnection</TokenIdentifier>
+			<Abstract type="html">Cancel the existing connecttion.</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelConnection</Declaration>
+			
+			
+			<Anchor>//api/name/cancelConnection</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/isPerpherialConnected</TokenIdentifier>
+			<Abstract type="html">Determine if a perpherial is connected</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isPerpherialConnected</Declaration>
+			
+			
+			<Anchor>//api/name/isPerpherialConnected</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/discoverServices:</TokenIdentifier>
+			<Abstract type="html">Discover services of interest with the connected peripheral.</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)discoverServices:(NSArray *)serviceUUIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceUUIDs</Name>
+					<Abstract type="html">An array of NSString representing the UUIDs of the interested services.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/discoverServices:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/discoverAllCharacteristicsForService:</TokenIdentifier>
+			<Abstract type="html">Discover all characteristics for the provided service</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)discoverAllCharacteristicsForService:(NSString *)serviceUUID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceUUID</Name>
+					<Abstract type="html">A NSString representing the UUID of the service of interest</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/discoverAllCharacteristicsForService:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/discoverCharacteristics:forService:</TokenIdentifier>
+			<Abstract type="html">Discover speicific characteristics for the provided service</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)discoverCharacteristics:(NSArray *)characteristicUUIDs forService:(NSString *)serviceUUID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>characteristicUUIDs</Name>
+					<Abstract type="html">An array of NSString representing the characteristics of interest.</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceUUID</Name>
+					<Abstract type="html">A NSString representing the service for which the characteristics should be available</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/discoverCharacteristics:forService:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/isServiceAvailable:</TokenIdentifier>
+			<Abstract type="html">Determine is a service is available in the connected peripheral</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isServiceAvailable:(NSString *)serviceUUID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceUUID</Name>
+					<Abstract type="html">A NSString representing the UUID of the service of interest</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A boolean indicating if the service is available in the connected peripheral</Abstract></ReturnValue>
+			<Anchor>//api/name/isServiceAvailable:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/writeValue:toCharacteristicUUID:withServiceUUID:</TokenIdentifier>
+			<Abstract type="html">Try to write data to a characteristic</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)writeValue:(NSData *)data toCharacteristicUUID:(NSString *)characteristicUUID withServiceUUID:(NSString *)serviceUUID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The value to write to the characteristic</Abstract>
+				</Parameter><Parameter>
+					<Name>characteristicUUID</Name>
+					<Abstract type="html">A NSString representing the UUID of the characteristic</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceUUID</Name>
+					<Abstract type="html">A NSString representing the UUID of the service</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/writeValue:toCharacteristicUUID:withServiceUUID:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/readValueFromCharacteristicUUID:withServiceID:</TokenIdentifier>
+			<Abstract type="html">Try to read the value of a characteristic</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)readValueFromCharacteristicUUID:(NSString *)characteristicUUID withServiceID:(NSString *)serviceUUID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>characteristicUUID</Name>
+					<Abstract type="html">A NSString representing the UUID of the characteristic</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceUUID</Name>
+					<Abstract type="html">A NSString representing the UUID of the service</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/readValueFromCharacteristicUUID:withServiceID:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/setNotificationState:forCharacteristicUUID:withServiceUUID:</TokenIdentifier>
+			<Abstract type="html">Try to set a notification or indication state of a characteristic</Abstract>
+			<DeclaredIn>UHNBLEController.h</DeclaredIn>
+			
+			<Declaration>- (void)setNotificationState:(BOOL)notify forCharacteristicUUID:(NSString *)characteristicUUID withServiceUUID:(NSString *)serviceUUID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notify</Name>
+					<Abstract type="html">Indicates whether notifications or indications should be enabled or disabled</Abstract>
+				</Parameter><Parameter>
+					<Name>characteristicUUID</Name>
+					<Abstract type="html">A NSString representing the UUID of the characteristic</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceUUID</Name>
+					<Abstract type="html">A NSString representing the UUID of the service</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setNotificationState:forCharacteristicUUID:withServiceUUID:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

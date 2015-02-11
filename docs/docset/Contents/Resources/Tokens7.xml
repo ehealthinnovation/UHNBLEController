@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSDictionary+RACPExtension.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSDictionary(RACPExtension)</TokenIdentifier>
+			<Abstract type="html">NSDictionary+RACPExtension provides helper methods for interpreting the dictionary returned by the [NSData+RACPParse]</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/isNumberOfRecordResponse</TokenIdentifier>
+			<Abstract type="html">Checks if the RACP response details dictionary is a number of records response</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isNumberOfRecordResponse</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response was to a report number of records operation, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isNumberOfRecordResponse</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/isGeneralResponse</TokenIdentifier>
+			<Abstract type="html">Checks if the RACP response details dictionary is a general response</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isGeneralResponse</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response was a general response, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isGeneralResponse</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/isSuccessfulResponseReportRecords</TokenIdentifier>
+			<Abstract type="html">Checks if the RACP response was a successful report records operation</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSuccessfulResponseReportRecords</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response was to a successful report records operation, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSuccessfulResponseReportRecords</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/isSuccessfulResponseDeleteRecords</TokenIdentifier>
+			<Abstract type="html">Checks if the RACP response was a successful delete records operation</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSuccessfulResponseDeleteRecords</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response was to a successful delete records operation, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSuccessfulResponseDeleteRecords</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/isSuccessfulResponseAbort</TokenIdentifier>
+			<Abstract type="html">Checks if the RACP response was a successful abort operation</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSuccessfulResponseAbort</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the response was to a successful abort operation, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isSuccessfulResponseAbort</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/numberOfRecords</TokenIdentifier>
+			<Abstract type="html">Get the number of records from the RACP response details</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+			
+			<Declaration>- (NSNumber *)numberOfRecords</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns the number of stored records for the request, otherwise nil (RACP response is not a response to report number of records).</Abstract></ReturnValue>
+			<Anchor>//api/name/numberOfRecords</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/responseOpCode</TokenIdentifier>
+			<Abstract type="html">Get the RACP response op code</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+			
+			<Declaration>- (RACPOpCode)responseOpCode</Declaration>
+			
+			<ReturnValue><Abstract type="html">Only two possible op codes, report number of records response or general response. The values are defined in RACPConstants.h</Abstract></ReturnValue>
+			<Anchor>//api/name/responseOpCode</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/requestOpCode</TokenIdentifier>
+			<Abstract type="html">Get the RACP request op code</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+			
+			<Declaration>- (RACPOpCode)requestOpCode</Declaration>
+			
+			<ReturnValue><Abstract type="html">The request op code is the operation just completed by the RACP and for which these response details are related to. The values are defined in RACPConstants.h</Abstract></ReturnValue>
+			<Anchor>//api/name/requestOpCode</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSDictionary/responseCodeValue</TokenIdentifier>
+			<Abstract type="html">Get the RACP response code value</Abstract>
+			<DeclaredIn>NSDictionary+RACPExtension.h</DeclaredIn>
+			
+			<Declaration>- (RACPResponseCode)responseCodeValue</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns the value of the response code. The values are defined in RACPConstants.h</Abstract></ReturnValue>
+			<Anchor>//api/name/responseCodeValue</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

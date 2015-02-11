@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/RACPFilterType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/RACPFilterType</TokenIdentifier>
+			<Abstract type="html">All possible record access control point filter types with their assigned value</Abstract>
+			<DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kRACPFilterTypeSquenceNumber</TokenIdentifier>
+            <Abstract type="html">Filter type of sequence number</Abstract>
+            <Declaration>kRACPFilterTypeSquenceNumber</Declaration>
+            
+            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kRACPFilterTypeTimeOffset</TokenIdentifier>
+            <Abstract type="html">Filter type of time offset</Abstract>
+            <Declaration>kRACPFilterTypeTimeOffset</Declaration>
+            
+            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kRACPFilterTypeUserFacingTime</TokenIdentifier>
+            <Abstract type="html">Filter type of user facing time</Abstract>
+            <Declaration>kRACPFilterTypeUserFacingTime</Declaration>
+            
+            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/RACPOpCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/RACPOpCode</TokenIdentifier>
+			<Abstract type="html">All possible record access control point operation codes with their assigned value</Abstract>
+			<DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeStoredRecordsReport</TokenIdentifier>
+            <Abstract type="html">Op Code for requesting a report of the stored records</Abstract>
+            <Declaration>kRACPOpCodeStoredRecordsReport</Declaration>
+            
+            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeStoredRecordsDelete</TokenIdentifier>
+            <Abstract type="html">Op Code for requesting a delete of the stored records</Abstract>
+            <Declaration>kRACPOpCodeStoredRecordsDelete</Declaration>
+            
+            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeAbortOperation</TokenIdentifier>
+            <Abstract type="html">Op Code for requesting an abort of the previous operation</Abstract>
+            <Declaration>kRACPOpCodeAbortOperation</Declaration>
+            
+            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeStoredRecordsReportNumber</TokenIdentifier>
+            <Abstract type="html">Op Code for requesting the number of stored records</Abstract>
+            <Declaration>kRACPOpCodeStoredRecordsReportNumber</Declaration>
+            
+            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeResponseStoredRecordsReportNumber</TokenIdentifier>
+            <Abstract type="html">Op Code for the response for the number of stored records</Abstract>
+            <Declaration>kRACPOpCodeResponseStoredRecordsReportNumber</Declaration>
+            
+            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeResponse</TokenIdentifier>
+            <Abstract type="html">Op Code for a general response</Abstract>
+            <Declaration>kRACPOpCodeResponse</Declaration>
+            
+            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

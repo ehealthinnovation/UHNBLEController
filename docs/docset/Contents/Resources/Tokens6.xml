@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+RACPParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(RACPParser)</TokenIdentifier>
+			<Abstract type="html">NSData+RACPParser provides record access control point (RACP) response parsing</Abstract>
+			<DeclaredIn>NSData+RACPParser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/parseRACPResponse</TokenIdentifier>
+			<Abstract type="html">Parses an RACP response and provided the details in a dictionary using keys from the RACPConstants.h</Abstract>
+			<DeclaredIn>NSData+RACPParser.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)parseRACPResponse</Declaration>
+			
+			<ReturnValue><Abstract type="html">Dictionar of the RACP response details</Abstract></ReturnValue>
+			<Anchor>//api/name/parseRACPResponse</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
