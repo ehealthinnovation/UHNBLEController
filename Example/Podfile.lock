@@ -38,7 +38,7 @@ SPEC CHECKSUMS:
   Expecta+Snapshots: 4a56b9411c6ed156987072e52c39de67d864015a
   FBSnapshotTestCase: e2914fbaabccea1dcc773d6a16b1c24540642488
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
-  UHNBLEController: c659dd69ab7872dc070494bba17cb9b421bbf625
+  UHNBLEController: f024bccd03071d747446ea6aeea89b06cea48f5d
   UHNDebug: c0f53cfc5234c9ddf4cdd8106c03cd788afd9ca3
 
 COCOAPODS: 0.35.0
