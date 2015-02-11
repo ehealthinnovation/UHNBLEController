@@ -47,10 +47,8 @@
         return *(uint32_t*)[[self subdataWithRange: range] bytes];
     } else if (range.length == 4) {
         return *(uint32_t*)[[self subdataWithRange: range] bytes];
-    } else if (range.length == 8) {
-        return *(uint64_t*)[[self subdataWithRange: range] bytes];
     }
-    NSAssert(false, @"length needs to be 1, 2, 4, or 8 bytes for this to work.");
+    NSAssert(false, @"length needs to be 1, 2, or 4 bytes for this to work.");
     return 0;
 }
 
@@ -62,10 +60,8 @@
         return *(int16_t*)[[self subdataWithRange: range] bytes];
     } else if (range.length == 4) {
         return *(int32_t*)[[self subdataWithRange: range] bytes];
-    } else if (range.length == 8) {
-        return *(int64_t*)[[self subdataWithRange: range] bytes];
     }
-    NSAssert(false, @"length needs to be 1, 2, 4, or 8 bytes for this to work.");
+    NSAssert(false, @"length needs to be 1, 2, or 4 bytes for this to work.");
     return 0;
 }
 
