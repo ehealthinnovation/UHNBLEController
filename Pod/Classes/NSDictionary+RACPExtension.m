@@ -72,12 +72,20 @@
 }
 - (RACPOpCode)requestOpCode;
 {
-    return [[[self objectForKey:kRACPKeyResponseCodeDetails] objectForKey:kRACPKeyRequestOpCode] unsignedIntegerValue];
+    if ([self isGeneralResponse]) {
+        return [[[self objectForKey:kRACPKeyResponseCodeDetails] objectForKey:kRACPKeyRequestOpCode] unsignedIntegerValue];
+    } else {
+        return 255;
+    }
 }
 
 - (RACPResponseCode)responseCodeValue;
 {
-    return [[[self objectForKey:kRACPKeyResponseCodeDetails] objectForKey:kRACPKeyResponseCode] unsignedIntegerValue];
+    if ([self isGeneralResponse]) {
+        return [[[self objectForKey:kRACPKeyResponseCodeDetails] objectForKey:kRACPKeyResponseCode] unsignedIntegerValue];
+    } else {
+        return 255;
+    }
 }
 
 

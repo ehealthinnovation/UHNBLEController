@@ -12,17 +12,17 @@
 #define COCOAPODS_VERSION_MINOR_Expecta 3
 #define COCOAPODS_VERSION_PATCH_Expecta 1
 
-// Expecta+Snapshots
-#define COCOAPODS_POD_AVAILABLE_Expecta_Snapshots
-#define COCOAPODS_VERSION_MAJOR_Expecta_Snapshots 1
-#define COCOAPODS_VERSION_MINOR_Expecta_Snapshots 3
-#define COCOAPODS_VERSION_PATCH_Expecta_Snapshots 1
+// OCHamcrest
+#define COCOAPODS_POD_AVAILABLE_OCHamcrest
+#define COCOAPODS_VERSION_MAJOR_OCHamcrest 4
+#define COCOAPODS_VERSION_MINOR_OCHamcrest 1
+#define COCOAPODS_VERSION_PATCH_OCHamcrest 1
 
-// FBSnapshotTestCase
-#define COCOAPODS_POD_AVAILABLE_FBSnapshotTestCase
-#define COCOAPODS_VERSION_MAJOR_FBSnapshotTestCase 1
-#define COCOAPODS_VERSION_MINOR_FBSnapshotTestCase 5
-#define COCOAPODS_VERSION_PATCH_FBSnapshotTestCase 0
+// OCMockito
+#define COCOAPODS_POD_AVAILABLE_OCMockito
+#define COCOAPODS_VERSION_MAJOR_OCMockito 1
+#define COCOAPODS_VERSION_MINOR_OCMockito 4
+#define COCOAPODS_VERSION_PATCH_OCMockito 0
 
 // Specta
 #define COCOAPODS_POD_AVAILABLE_Specta

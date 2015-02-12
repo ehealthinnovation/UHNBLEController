@@ -30,3 +30,4 @@
 #import "RACPConstants.h"
 #import "NSData+RACPCommands.h"
 #import "NSData+RACPParser.h"
+#import "NSDictionary+RACPExtension.h"

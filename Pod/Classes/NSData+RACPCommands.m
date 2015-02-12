@@ -22,7 +22,7 @@
     return [self storedRecordsLessThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReport filter: kRACPFilterTypeTimeOffset];
 }
 
-+ (NSData*)reportStoredRecordsGreaterThanOrEqualToimeOffset:(uint16_t)timeOffset;
++ (NSData*)reportStoredRecordsGreaterThanOrEqualToTimeOffset:(uint16_t)timeOffset;
 {
     return [self storedRecordsGreaterThanEqualTo: timeOffset opCode: kRACPOpCodeStoredRecordsReport filter: kRACPFilterTypeTimeOffset];
 }

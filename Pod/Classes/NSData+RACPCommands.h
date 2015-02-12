@@ -58,7 +58,7 @@
  
  @return The command as a `NSData` object
  */
-+ (NSData*)reportStoredRecordsGreaterThanOrEqualToimeOffset: (uint16_t)timeOffset;
++ (NSData*)reportStoredRecordsGreaterThanOrEqualToTimeOffset: (uint16_t)timeOffset;
 
 /**
  Command for reporting stored records between a max and min time offset

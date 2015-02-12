@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		483888381A8CF4A900E81E9B /* RACPParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 483888371A8CF4A900E81E9B /* RACPParserTests.m */; };
+		4838883A1A8D112600E81E9B /* RACPCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 483888391A8D112600E81E9B /* RACPCommandTests.m */; };
+		4838883C1A8D18B600E81E9B /* DataConversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4838883B1A8D18B600E81E9B /* DataConversionTests.m */; };
+		4838883E1A8D3F2C00E81E9B /* BLEControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4838883D1A8D3F2C00E81E9B /* BLEControllerTests.m */; };
 		48DD4A5D1A8A99E30097E758 /* PeripheralDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DD4A5C1A8A99E30097E758 /* PeripheralDetailsViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -35,7 +39,6 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6362CFB4B6E83F8906BCB015 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 820D1FC780C65758F8AD1434 /* libPods-Tests.a */; };
 		DCE932E6DE89C8402C3392D0 /* libPods-UHNBLEController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65869E498F6D05639F565EC4 /* libPods-UHNBLEController.a */; };
 /* End PBXBuildFile section */
@@ -54,6 +57,10 @@
 		04F29D0A514E00215B57C7D9 /* UHNBLEController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UHNBLEController.podspec; path = ../UHNBLEController.podspec; sourceTree = "<group>"; };
 		35504484BD49D9B79EC33406 /* Pods-UHNBLEController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UHNBLEController.release.xcconfig"; path = "Pods/Target Support Files/Pods-UHNBLEController/Pods-UHNBLEController.release.xcconfig"; sourceTree = "<group>"; };
 		3C9AB1FA530B888F96E8D61B /* Pods-UHNBLEController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UHNBLEController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UHNBLEController/Pods-UHNBLEController.debug.xcconfig"; sourceTree = "<group>"; };
+		483888371A8CF4A900E81E9B /* RACPParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACPParserTests.m; sourceTree = "<group>"; };
+		483888391A8D112600E81E9B /* RACPCommandTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACPCommandTests.m; sourceTree = "<group>"; };
+		4838883B1A8D18B600E81E9B /* DataConversionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataConversionTests.m; sourceTree = "<group>"; };
+		4838883D1A8D3F2C00E81E9B /* BLEControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEControllerTests.m; sourceTree = "<group>"; };
 		48DD4A5B1A8A99E30097E758 /* PeripheralDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralDetailsViewController.h; sourceTree = "<group>"; };
 		48DD4A5C1A8A99E30097E758 /* PeripheralDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralDetailsViewController.m; sourceTree = "<group>"; };
 		5FB7290E85570754A730531F /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +82,6 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		65869E498F6D05639F565EC4 /* libPods-UHNBLEController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UHNBLEController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7101B6184864E5AEA67A2784 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,7 +181,10 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				483888371A8CF4A900E81E9B /* RACPParserTests.m */,
+				483888391A8D112600E81E9B /* RACPCommandTests.m */,
+				4838883B1A8D18B600E81E9B /* DataConversionTests.m */,
+				4838883D1A8D3F2C00E81E9B /* BLEControllerTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -405,7 +414,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				483888381A8CF4A900E81E9B /* RACPParserTests.m in Sources */,
+				4838883E1A8D3F2C00E81E9B /* BLEControllerTests.m in Sources */,
+				4838883C1A8D18B600E81E9B /* DataConversionTests.m in Sources */,
+				4838883A1A8D112600E81E9B /* RACPCommandTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

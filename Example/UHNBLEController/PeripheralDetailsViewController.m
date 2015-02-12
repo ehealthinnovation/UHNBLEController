@@ -3,7 +3,7 @@
 //  UHNBLEController
 //
 //  Created by Nathaniel Hamming on 2015-02-10.
-//  Copyright (c) 2015 Nathaniel Hamming. All rights reserved.
+//  Copyright (c) 2015 University Health Network.
 //
 
 #import "PeripheralDetailsViewController.h"

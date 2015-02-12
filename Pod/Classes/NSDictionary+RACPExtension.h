@@ -92,6 +92,8 @@
  
  @return The request op code is the operation just completed by the RACP and for which these response details are related to. The values are defined in `RACPConstants.h`
  
+ @discussion If a value of 255 is returned no request op code was found
+ 
  */
 - (RACPOpCode)requestOpCode;
 
@@ -99,6 +101,8 @@
  Get the RACP response code value
  
  @return Returns the value of the response code. The values are defined in `RACPConstants.h`
+ 
+ @discussion If a value of 255 is returned no response code value was found
  
  */
 - (RACPResponseCode)responseCodeValue;

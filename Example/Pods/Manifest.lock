@@ -1,17 +1,15 @@
 PODS:
   - Expecta (0.3.1)
-  - Expecta+Snapshots (1.3.1):
-    - Expecta
-    - FBSnapshotTestCase
-  - FBSnapshotTestCase (1.5)
+  - OCHamcrest (4.1.1)
+  - OCMockito (1.4.0):
+    - OCHamcrest (~> 4.0)
   - Specta (0.3.0.beta1)
   - UHNBLEController (0.1.0)
   - UHNDebug (0.1.0)
 
 DEPENDENCIES:
   - Expecta
-  - Expecta+Snapshots
-  - FBSnapshotTestCase
+  - OCMockito (~> 1.0)
   - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
   - UHNBLEController (from `../`)
   - UHNDebug (from `git@github.ehealthinnovation.org:PHIT/UHNDebug.git`)
@@ -35,8 +33,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  Expecta+Snapshots: 4a56b9411c6ed156987072e52c39de67d864015a
-  FBSnapshotTestCase: e2914fbaabccea1dcc773d6a16b1c24540642488
+  OCHamcrest: af1c7c5ea345de69ea6c9c2958f65f3044e5c420
+  OCMockito: 991936bb775cc4c27f063d38f5e17b9161fbd21c
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
   UHNBLEController: f024bccd03071d747446ea6aeea89b06cea48f5d
   UHNDebug: c0f53cfc5234c9ddf4cdd8106c03cd788afd9ca3
