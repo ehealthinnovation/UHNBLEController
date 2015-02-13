@@ -341,11 +341,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/readValueFromCharacteristicUUID:withServiceID:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/readValueFromCharacteristicUUID:withServiceUUID:</TokenIdentifier>
 			<Abstract type="html">Try to read the value of a characteristic</Abstract>
 			<DeclaredIn>UHNBLEController.h</DeclaredIn>
 			
-			<Declaration>- (void)readValueFromCharacteristicUUID:(NSString *)characteristicUUID withServiceID:(NSString *)serviceUUID</Declaration>
+			<Declaration>- (void)readValueFromCharacteristicUUID:(NSString *)characteristicUUID withServiceUUID:(NSString *)serviceUUID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>characteristicUUID</Name>
@@ -356,7 +356,7 @@
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/readValueFromCharacteristicUUID:withServiceID:</Anchor>
+			<Anchor>//api/name/readValueFromCharacteristicUUID:withServiceUUID:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

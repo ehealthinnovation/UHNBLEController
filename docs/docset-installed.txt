@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
 Path: /Users/nhamming/Library/Developer/Shared/Documentation/DocSets/org.ehealthinnovation.UHNBLEController.docset
-Time: 2015-02-10 00:49:12 +0000
+Time: 2015-02-13 15:17:42 +0000

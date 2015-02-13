@@ -13,11 +13,11 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UHNBLEControllerDelegate/bleController:didDiscoverPeripheral:RSSI:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNBLEControllerDelegate/bleController:didDiscoverPeripheral:services:RSSI:</TokenIdentifier>
 			<Abstract type="html">Notifies the delegate when a peripheral has been discovered</Abstract>
 			<DeclaredIn>UHNBLEController.h</DeclaredIn>
 			
-			<Declaration>- (void)bleController:(UHNBLEController *)controller didDiscoverPeripheral:(NSString *)deviceName RSSI:(NSNumber *)RSSI</Declaration>
+			<Declaration>- (void)bleController:(UHNBLEController *)controller didDiscoverPeripheral:(NSString *)deviceName services:(NSArray *)serviceUUIDs RSSI:(NSNumber *)RSSI</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>controller</Name>
@@ -31,7 +31,7 @@
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/bleController:didDiscoverPeripheral:RSSI:</Anchor>
+			<Anchor>//api/name/bleController:didDiscoverPeripheral:services:RSSI:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

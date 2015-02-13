@@ -150,17 +150,17 @@
             
         </Node>
 		<Node id="4" type="file" documentType="reference">
-            <Name>NSData(ConvertionExtensions)</Name>
-            <Path>Categories/NSData+ConvertionExtensions.html</Path>
+            <Name>NSData(ConversionExtensions)</Name>
+            <Path>Categories/NSData+ConversionExtensions.html</Path>
             
                 <Subnodes>
                 <Node type="section">
-                    <Path>Categories/NSData+ConvertionExtensions.html</Path>
+                    <Path>Categories/NSData+ConversionExtensions.html</Path>
                     <Name>Overview</Name>
                     <Anchor>overview</Anchor>
                 </Node>
                 <Node type="section">
-                    <Path>Categories/NSData+ConvertionExtensions.html</Path>
+                    <Path>Categories/NSData+ConversionExtensions.html</Path>
                     <Name>Tasks</Name>
                     <Anchor>tasks</Anchor>
                 </Node>
@@ -168,7 +168,7 @@
                 
                 
                 <Node type="section">
-                    <Path>Categories/NSData+ConvertionExtensions.html</Path>
+                    <Path>Categories/NSData+ConversionExtensions.html</Path>
                     <Name>Instance Methods</Name>
                     <Anchor>instance_methods</Anchor>
                 </Node>

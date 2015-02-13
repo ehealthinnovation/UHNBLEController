@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/NSData+ConvertionExtensions.html">
+	<File path="Categories/NSData+ConversionExtensions.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/NSData(ConvertionExtensions)</TokenIdentifier>
-			<Abstract type="html">NSData+ConvertionExtensions converts NSDate bytes to standard types (float, NSUInteger, NSString, NSDate)</Abstract>
-			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(ConversionExtensions)</TokenIdentifier>
+			<Abstract type="html">NSData+ConversionExtensions converts NSDate bytes to standard types (float, NSUInteger, NSString, NSDate)</Abstract>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
             
 			
 			<NodeRef refid="4"/>
@@ -15,7 +15,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NSData/shortFloatToFloat</TokenIdentifier>
 			<Abstract type="html">Converts an NSData representing a short float to float</Abstract>
-			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
 			
 			<Declaration>- (float)shortFloatToFloat</Declaration>
 			
@@ -27,7 +27,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NSData/shortFloatAtRange:</TokenIdentifier>
 			<Abstract type="html">Converts the short float represented by the bytes in the given range to a float</Abstract>
-			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
 			
 			<Declaration>- (float)shortFloatAtRange:(NSRange)range</Declaration>
 			<Parameters>
@@ -44,7 +44,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NSData/unsignedIntegerAtRange:</TokenIdentifier>
 			<Abstract type="html">Converts the bytes in the given range to an unsigned integer value</Abstract>
-			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
 			
 			<Declaration>- (NSUInteger)unsignedIntegerAtRange:(NSRange)range</Declaration>
 			<Parameters>
@@ -61,7 +61,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NSData/integerAtRange:</TokenIdentifier>
 			<Abstract type="html">Converts the bytes in the given range to an integer value</Abstract>
-			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
 			
 			<Declaration>- (NSInteger)integerAtRange:(NSRange)range</Declaration>
 			<Parameters>
@@ -78,7 +78,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NSData/stringAtRange:</TokenIdentifier>
 			<Abstract type="html">Converts the bytes in the given range to a string</Abstract>
-			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
 			
 			<Declaration>- (NSString *)stringAtRange:(NSRange)range</Declaration>
 			<Parameters>
@@ -95,7 +95,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NSData/parseDateFromStringWithFormat:andRange:</TokenIdentifier>
 			<Abstract type="html">Converts the bytes in the given range to a date using the given string format</Abstract>
-			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
 			
 			<Declaration>- (NSDate *)parseDateFromStringWithFormat:(NSString *)dateFormat andRange:(NSRange)range</Declaration>
 			<Parameters>
@@ -115,7 +115,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/NSData/parseDateWithSecondsSinceReferenceDateWithRange:</TokenIdentifier>
 			<Abstract type="html">Converts the bytes in the given range to a date</Abstract>
-			<DeclaredIn>NSData+ConvertionExtensions.h</DeclaredIn>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
 			
 			<Declaration>- (NSDate *)parseDateWithSecondsSinceReferenceDateWithRange:(NSRange)range</Declaration>
 			<Parameters>

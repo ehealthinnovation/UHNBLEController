@@ -210,7 +210,7 @@
     }
 }
 
-- (void)readValueFromCharacteristicUUID:(NSString*)characteristicUUID withServiceID:(NSString*)serviceUUID
+- (void)readValueFromCharacteristicUUID:(NSString*)characteristicUUID withServiceUUID:(NSString*)serviceUUID
 {
     DLog(@"%s: %@ %@", __PRETTY_FUNCTION__, characteristicUUID, serviceUUID);
     CBService *service = [self retrieveService: serviceUUID];

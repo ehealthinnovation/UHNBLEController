@@ -207,7 +207,7 @@
  @discussion If the character is not available, the delegate could get the optional a `[UHNBLEControllerDelegate bleController:characteristicNotAvailable:]` event.
 
  */
-- (void)readValueFromCharacteristicUUID:(NSString*)characteristicUUID withServiceID:(NSString*)serviceUUID;
+- (void)readValueFromCharacteristicUUID:(NSString*)characteristicUUID withServiceUUID:(NSString*)serviceUUID;
 
 /** 
  Try to set a notification or indication state of a characteristic
