@@ -19,11 +19,10 @@ Pod::Spec.new do |s|
                        * connecting with a BLE peripheral advertising specific services
 
                        DESC
-  s.homepage         = "https://github.ehealthinnovation.org/JDRF/UHNBLEController"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/uhnmdi/UHNBLEController"
   s.license          = 'MIT'
   s.author           = { "Nathaniel Hamming" => "nhamming@ehealthinnovation.org" }
-  s.source           = { :git => "https://github.ehealthinnovation.org/JDRF/UHNBLEController.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/uhnmdi/UHNBLEController.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/NateHam80'
 
   s.platform     = :ios, '7.0'
@@ -34,7 +33,6 @@ Pod::Spec.new do |s|
     'UHNBLEController' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'CoreBluetooth'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'UHNDebug'
 end

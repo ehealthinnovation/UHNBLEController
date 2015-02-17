@@ -4,7 +4,8 @@ PODS:
   - OCMockito (1.4.0):
     - OCHamcrest (~> 4.0)
   - Specta (0.3.0.beta1)
-  - UHNBLEController (0.1.0)
+  - UHNBLEController (0.1.0):
+    - UHNDebug
   - UHNDebug (0.1.0)
 
 DEPENDENCIES:
@@ -36,7 +37,7 @@ SPEC CHECKSUMS:
   OCHamcrest: af1c7c5ea345de69ea6c9c2958f65f3044e5c420
   OCMockito: 991936bb775cc4c27f063d38f5e17b9161fbd21c
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
-  UHNBLEController: f024bccd03071d747446ea6aeea89b06cea48f5d
+  UHNBLEController: 0a39e390da8d39afd50d0413218d8fb54069eebe
   UHNDebug: c0f53cfc5234c9ddf4cdd8106c03cd788afd9ca3
 
 COCOAPODS: 0.35.0
