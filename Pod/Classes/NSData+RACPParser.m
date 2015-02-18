@@ -17,13 +17,13 @@
     RACPOpCode opCode = [self parseRACPResponseOpCode];
     NSMutableDictionary *responseDict = [NSMutableDictionary dictionaryWithObject: [NSNumber numberWithUnsignedInteger: opCode] forKey: kRACPKeyResponseOpCode];
     switch (opCode) {
-        case kRACPOpCodeResponseStoredRecordsReportNumber:
+        case RACPOpCodeResponseStoredRecordsReportNumber:
         {
             NSUInteger numOfRecords = [self parseRACPResponseNumberOfRecords];
             responseDict[kRACPKeyNumberOfRecords] = [NSNumber numberWithUnsignedInteger: numOfRecords];
             break;
         }
-        case kRACPOpCodeResponse:
+        case RACPOpCodeResponse:
         {
             NSDictionary *responseDetails = [self parseRACPResponseCodeDetails];
             responseDict[kRACPKeyResponseCodeDetails] = responseDetails;

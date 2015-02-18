@@ -52,17 +52,17 @@
  */
 typedef NS_ENUM(uint8_t, RACPOpCode) {
     /** Op Code for requesting a report of the stored records */
-    kRACPOpCodeStoredRecordsReport = 1,
+    RACPOpCodeStoredRecordsReport = 1,
     /** Op Code for requesting a delete of the stored records */
-    kRACPOpCodeStoredRecordsDelete,
+    RACPOpCodeStoredRecordsDelete,
     /** Op Code for requesting an abort of the previous operation */
-    kRACPOpCodeAbortOperation,
+    RACPOpCodeAbortOperation,
     /** Op Code for requesting the number of stored records */
-    kRACPOpCodeStoredRecordsReportNumber,
+    RACPOpCodeStoredRecordsReportNumber,
     /** Op Code for the response for the number of stored records */
-    kRACPOpCodeResponseStoredRecordsReportNumber,
+    RACPOpCodeResponseStoredRecordsReportNumber,
     /** Op Code for a general response */
-    kRACPOpCodeResponse
+    RACPOpCodeResponse
 };
 
 ///---------------------
@@ -73,19 +73,19 @@ typedef NS_ENUM(uint8_t, RACPOpCode) {
  */
 typedef NS_ENUM(uint8_t, RACPOperator) {
     /** The NULL operator. Used when an operator isn't required */
-    kRACPOperatorNull = 0,
+    RACPOperatorNull = 0,
     /** Operator for indicating all records */
-    kRACPOperatorRecordsAll,
+    RACPOperatorRecordsAll,
     /** Operator for indicating less than or equal to */
-    kRACPOperatorLessThanEqualTo,
+    RACPOperatorLessThanEqualTo,
     /** Operator for indicating greater thatn or equal to */
-    kRACPOperatorGreaterThanEqualTo,
+    RACPOperatorGreaterThanEqualTo,
     /** Operator for indicating within a given range */
-    kRACPOperatorWithinRange,
+    RACPOperatorWithinRange,
     /** Operator for indicating the first record */
-    kRACPOperatorRecordFirst,
+    RACPOperatorRecordFirst,
     /** Operator for indicating the last record */
-    kRACPOperatorRecordLast
+    RACPOperatorRecordLast
 };
 
 ///------------------------
@@ -96,11 +96,11 @@ typedef NS_ENUM(uint8_t, RACPOperator) {
  */
 typedef NS_ENUM(uint8_t, RACPFilterType) {
     /** Filter type of sequence number */
-    kRACPFilterTypeSquenceNumber = 1,
+    RACPFilterTypeSquenceNumber = 1,
     /** Filter type of time offset */
-    kRACPFilterTypeTimeOffset = 1,
+    RACPFilterTypeTimeOffset = 1,
     /** Filter type of user facing time */
-    kRACPFilterTypeUserFacingTime = 2,
+    RACPFilterTypeUserFacingTime = 2,
 };
 
 ///--------------------------
@@ -111,21 +111,21 @@ typedef NS_ENUM(uint8_t, RACPFilterType) {
  */
 typedef NS_ENUM(uint8_t, RACPResponseCode) {
     /** Response code for success */
-    kRACPSuccess = 1,
+    RACPSuccess = 1,
     /** Response code for op code not supported */
-    kRACPNotSupportedOpCode,
+    RACPNotSupportedOpCode,
     /** Response code for invalid operator */
-    kRACPInvalidOperator,
+    RACPInvalidOperator,
     /** Response code for not supported operator */
-    kRACPNotSupportedOperator,
+    RACPNotSupportedOperator,
     /** Response code for invalid operand */
-    kRACPInvalidOperand,
+    RACPInvalidOperand,
     /** Response code for no records found */
-    kRACPNoRecordsFound,
+    RACPNoRecordsFound,
     /** Response code for abort unsuccessful */
-    kRACPAbortUnsuccessful,
+    RACPAbortUnsuccessful,
     /** Response code for procedure not completed */
-    kRACPProcedureNotCompleted,
+    RACPProcedureNotCompleted,
     /** Response code for not supported operand */
-    kRACPNotSupportedOperand,
+    RACPNotSupportedOperand,
 };

@@ -13,7 +13,7 @@
 - (BOOL)isNumberOfRecordResponse;
 {
     RACPOpCode opCode = [self responseOpCode];
-    if (opCode == kRACPOpCodeResponseStoredRecordsReportNumber) {
+    if (opCode == RACPOpCodeResponseStoredRecordsReportNumber) {
         return YES;
     } else {
         return NO;
@@ -23,7 +23,7 @@
 - (BOOL)isGeneralResponse;
 {
     RACPOpCode opCode = [self responseOpCode];
-    if (opCode == kRACPOpCodeResponse) {
+    if (opCode == RACPOpCodeResponse) {
         return YES;
     } else {
         return NO;
@@ -32,17 +32,17 @@
 
 - (BOOL)isSuccessfulResponseReportRecords;
 {
-    return [self isSuccessfulResponseOfType: kRACPOpCodeStoredRecordsReport];
+    return [self isSuccessfulResponseOfType: RACPOpCodeStoredRecordsReport];
 }
 
 - (BOOL)isSuccessfulResponseDeleteRecords;
 {
-    return [self isSuccessfulResponseOfType: kRACPOpCodeStoredRecordsDelete];
+    return [self isSuccessfulResponseOfType: RACPOpCodeStoredRecordsDelete];
 }
 
 - (BOOL)isSuccessfulResponseAbort;
 {
-    return [self isSuccessfulResponseOfType: kRACPOpCodeAbortOperation];
+    return [self isSuccessfulResponseOfType: RACPOpCodeAbortOperation];
 }
 
 - (BOOL)isSuccessfulResponseOfType: (RACPOpCode)opCode
@@ -50,7 +50,7 @@
     if ([self isGeneralResponse]) {
         RACPOpCode requestOpCode = [self requestOpCode];
         RACPResponseCode responseCode = [self responseCodeValue];
-        if (requestOpCode == opCode && responseCode == kRACPSuccess) {
+        if (requestOpCode == opCode && responseCode == RACPSuccess) {
             return YES;
         }
     }
