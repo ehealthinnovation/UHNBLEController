@@ -51,6 +51,8 @@
 						<NodeRef refid="11"/>
 						<NodeRef refid="12"/>
 						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
 						
 					</Subnodes>
 				</Node>
@@ -231,17 +233,17 @@
             
         </Node>
 		<Node id="7" type="file" documentType="reference">
-            <Name>NSDictionary(RACPExtension)</Name>
-            <Path>Categories/NSDictionary+RACPExtension.html</Path>
+            <Name>NSDictionary(RACPExtensions)</Name>
+            <Path>Categories/NSDictionary+RACPExtensions.html</Path>
             
                 <Subnodes>
                 <Node type="section">
-                    <Path>Categories/NSDictionary+RACPExtension.html</Path>
+                    <Path>Categories/NSDictionary+RACPExtensions.html</Path>
                     <Name>Overview</Name>
                     <Anchor>overview</Anchor>
                 </Node>
                 <Node type="section">
-                    <Path>Categories/NSDictionary+RACPExtension.html</Path>
+                    <Path>Categories/NSDictionary+RACPExtensions.html</Path>
                     <Name>Tasks</Name>
                     <Anchor>tasks</Anchor>
                 </Node>
@@ -249,7 +251,7 @@
                 
                 
                 <Node type="section">
-                    <Path>Categories/NSDictionary+RACPExtension.html</Path>
+                    <Path>Categories/NSDictionary+RACPExtensions.html</Path>
                     <Name>Instance Methods</Name>
                     <Anchor>instance_methods</Anchor>
                 </Node>
@@ -314,21 +316,31 @@
         </Node>
 		
         <Node id="10" type="file" documentType="reference">
+            <Name>GlucoseFluidTypeOption</Name>
+            <Path>Constants/GlucoseFluidTypeOption.html</Path>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>GlucoseSampleLocationOption</Name>
+            <Path>Constants/GlucoseSampleLocationOption.html</Path>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
             <Name>RACPFilterType</Name>
             <Path>Constants/RACPFilterType.html</Path>
             
         </Node>
-		<Node id="11" type="file" documentType="reference">
+		<Node id="13" type="file" documentType="reference">
             <Name>RACPOpCode</Name>
             <Path>Constants/RACPOpCode.html</Path>
             
         </Node>
-		<Node id="12" type="file" documentType="reference">
+		<Node id="14" type="file" documentType="reference">
             <Name>RACPOperator</Name>
             <Path>Constants/RACPOperator.html</Path>
             
         </Node>
-		<Node id="13" type="file" documentType="reference">
+		<Node id="15" type="file" documentType="reference">
             <Name>RACPResponseCode</Name>
             <Path>Constants/RACPResponseCode.html</Path>
             

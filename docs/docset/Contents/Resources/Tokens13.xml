@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/RACPResponseCode.html">
+	<File path="Constants/RACPOpCode.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/RACPResponseCode</TokenIdentifier>
-			<Abstract type="html">All possible record access control point response codes with their assigned value</Abstract>
-			<DeclaredIn>RACPConstants.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/RACPOpCode</TokenIdentifier>
+			<Abstract type="html">All possible record access control point operation codes with their assigned value</Abstract>
+			<DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
 			
 			<NodeRef refid="13"/>
@@ -14,91 +14,61 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPSuccess</TokenIdentifier>
-            <Abstract type="html">Response code for success</Abstract>
-            <Declaration>kRACPSuccess</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOpCodeStoredRecordsReport</TokenIdentifier>
+            <Abstract type="html">Op Code for requesting a report of the stored records</Abstract>
+            <Declaration>RACPOpCodeStoredRecordsReport</Declaration>
             
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="13"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPNotSupportedOpCode</TokenIdentifier>
-            <Abstract type="html">Response code for op code not supported</Abstract>
-            <Declaration>kRACPNotSupportedOpCode</Declaration>
-            
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
             <NodeRef refid="13"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPInvalidOperator</TokenIdentifier>
-            <Abstract type="html">Response code for invalid operator</Abstract>
-            <Declaration>kRACPInvalidOperator</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOpCodeStoredRecordsDelete</TokenIdentifier>
+            <Abstract type="html">Op Code for requesting a delete of the stored records</Abstract>
+            <Declaration>RACPOpCodeStoredRecordsDelete</Declaration>
             
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="13"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPNotSupportedOperator</TokenIdentifier>
-            <Abstract type="html">Response code for not supported operator</Abstract>
-            <Declaration>kRACPNotSupportedOperator</Declaration>
-            
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
             <NodeRef refid="13"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPInvalidOperand</TokenIdentifier>
-            <Abstract type="html">Response code for invalid operand</Abstract>
-            <Declaration>kRACPInvalidOperand</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOpCodeAbortOperation</TokenIdentifier>
+            <Abstract type="html">Op Code for requesting an abort of the previous operation</Abstract>
+            <Declaration>RACPOpCodeAbortOperation</Declaration>
             
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="13"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPNoRecordsFound</TokenIdentifier>
-            <Abstract type="html">Response code for no records found</Abstract>
-            <Declaration>kRACPNoRecordsFound</Declaration>
-            
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
             <NodeRef refid="13"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPAbortUnsuccessful</TokenIdentifier>
-            <Abstract type="html">Response code for abort unsuccessful</Abstract>
-            <Declaration>kRACPAbortUnsuccessful</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOpCodeStoredRecordsReportNumber</TokenIdentifier>
+            <Abstract type="html">Op Code for requesting the number of stored records</Abstract>
+            <Declaration>RACPOpCodeStoredRecordsReportNumber</Declaration>
             
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="13"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPProcedureNotCompleted</TokenIdentifier>
-            <Abstract type="html">Response code for procedure not completed</Abstract>
-            <Declaration>kRACPProcedureNotCompleted</Declaration>
-            
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
             <NodeRef refid="13"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPNotSupportedOperand</TokenIdentifier>
-            <Abstract type="html">Response code for not supported operand</Abstract>
-            <Declaration>kRACPNotSupportedOperand</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOpCodeResponseStoredRecordsReportNumber</TokenIdentifier>
+            <Abstract type="html">Op Code for the response for the number of stored records</Abstract>
+            <Declaration>RACPOpCodeResponseStoredRecordsReportNumber</Declaration>
             
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="13"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOpCodeResponse</TokenIdentifier>
+            <Abstract type="html">Op Code for a general response</Abstract>
+            <Declaration>RACPOpCodeResponse</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
             <NodeRef refid="13"/>
         </Token>

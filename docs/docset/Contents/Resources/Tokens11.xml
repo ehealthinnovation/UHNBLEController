@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/RACPOpCode.html">
+	<File path="Constants/GlucoseSampleLocationOption.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/RACPOpCode</TokenIdentifier>
-			<Abstract type="html">All possible record access control point operation codes with their assigned value</Abstract>
-			<DeclaredIn>RACPConstants.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/GlucoseSampleLocationOption</TokenIdentifier>
+			<Abstract type="html">All possible glucose sample locations with their assigned value</Abstract>
+			<DeclaredIn>UHNBLETypes.h</DeclaredIn>
             
 			
 			<NodeRef refid="11"/>
@@ -14,61 +14,61 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeStoredRecordsReport</TokenIdentifier>
-            <Abstract type="html">Op Code for requesting a report of the stored records</Abstract>
-            <Declaration>kRACPOpCodeStoredRecordsReport</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationFinger</TokenIdentifier>
+            <Abstract type="html">Sample location indicating that the glucose measurement was taken from the finger</Abstract>
+            <Declaration>GlucoseSampleLocationFinger</Declaration>
             
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeStoredRecordsDelete</TokenIdentifier>
-            <Abstract type="html">Op Code for requesting a delete of the stored records</Abstract>
-            <Declaration>kRACPOpCodeStoredRecordsDelete</Declaration>
-            
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeAbortOperation</TokenIdentifier>
-            <Abstract type="html">Op Code for requesting an abort of the previous operation</Abstract>
-            <Declaration>kRACPOpCodeAbortOperation</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationAlternativeSiteTest</TokenIdentifier>
+            <Abstract type="html">Sample location indicating that the glucose measurement was taken from an alternative site</Abstract>
+            <Declaration>GlucoseSampleLocationAlternativeSiteTest</Declaration>
             
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeStoredRecordsReportNumber</TokenIdentifier>
-            <Abstract type="html">Op Code for requesting the number of stored records</Abstract>
-            <Declaration>kRACPOpCodeStoredRecordsReportNumber</Declaration>
-            
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeResponseStoredRecordsReportNumber</TokenIdentifier>
-            <Abstract type="html">Op Code for the response for the number of stored records</Abstract>
-            <Declaration>kRACPOpCodeResponseStoredRecordsReportNumber</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationEarlobe</TokenIdentifier>
+            <Abstract type="html">Sample location indicating that the glucose measurement was taken from the earlobe</Abstract>
+            <Declaration>GlucoseSampleLocationEarlobe</Declaration>
             
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kRACPOpCodeResponse</TokenIdentifier>
-            <Abstract type="html">Op Code for a general response</Abstract>
-            <Declaration>kRACPOpCodeResponse</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationControlSolution</TokenIdentifier>
+            <Abstract type="html">Sample location indicating that the glucose measurement was taken with control solution</Abstract>
+            <Declaration>GlucoseSampleLocationControlSolution</Declaration>
             
-            <DeclaredIn>RACPConstants.h</DeclaredIn>
+            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationSubcutaneousTissue</TokenIdentifier>
+            <Abstract type="html">Sample location indicating that the glucose measurement was taken from subcutaneous tissue</Abstract>
+            <Declaration>GlucoseSampleLocationSubcutaneousTissue</Declaration>
+            
+            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationNotAvailable</TokenIdentifier>
+            <Abstract type="html">Sample location indicating that the location is not available</Abstract>
+            <Declaration>GlucoseSampleLocationNotAvailable</Declaration>
+            
+            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>

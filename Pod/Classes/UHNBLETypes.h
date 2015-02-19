@@ -35,3 +35,50 @@ typedef struct shortFloat {
     char exponent : 4;
     short mantissa : 12;
 } shortFloat;
+
+///------------------------------
+/// @name Comon Field Definitions
+///------------------------------
+/**
+ All possible glucose fluid types with their assigned value
+ */
+typedef NS_ENUM (uint8_t, GlucoseFluidTypeOption) {
+    /** Fluid Type indicating that the glucose measurement was taken from capillary whole blood */
+    GlucoseFluidTypeWholeBloodCapillary = 1,
+    /** Fluid Type indicating that the glucose measurement was taken from capillary plasma */
+    GlucoseFluidTypePlasmaCapillary,
+    /** Fluid Type indicating that the glucose measurement was taken from venous whole blood */
+    GlucoseFluidTypeWholeBloodVenous,
+    /** Fluid Type indicating that the glucose measurement was taken from venous plasma */
+    GlucoseFluidTypePlasmaVenous,
+    /** Fluid Type indicating that the glucose measurement was taken from arterial whole blood */
+    GlucoseFluidTypeWholeBloodArterial,
+    /** Fluid Type indicating that the glucose measurement was taken from arterial plasma */
+    GlucoseFluidTypePlasmaArterial,
+    /** Fluid Type indicating that the glucose measurement was taken from undetermined whole blood */
+    GlucoseFluidTypeWholeBloodUndetermined,
+    /** Fluid Type indicating that the glucose measurement was taken from undetermined plasma */
+    GlucoseFluidTypePlasmaUndetermined,
+    /** Fluid Type indicating that the glucose measurement was taken from interstitial fluid */
+    GlucoseFluidTypeISF,
+    /** Fluid Type indicating that the glucose measurement was taken from control solution */
+    GlucoseFluidTypeControlSolution,
+};
+
+/**
+ All possible glucose sample locations with their assigned value
+ */
+typedef NS_ENUM (uint8_t, GlucoseSampleLocationOption) {
+    /** Sample location indicating that the glucose measurement was taken from the finger */
+    GlucoseSampleLocationFinger                = 1,
+    /** Sample location indicating that the glucose measurement was taken from an alternative site */
+    GlucoseSampleLocationAlternativeSiteTest   = 2,
+    /** Sample location indicating that the glucose measurement was taken from the earlobe */
+    GlucoseSampleLocationEarlobe               = 3,
+    /** Sample location indicating that the glucose measurement was taken with control solution */
+    GlucoseSampleLocationControlSolution       = 4,
+    /** Sample location indicating that the glucose measurement was taken from subcutaneous tissue */
+    GlucoseSampleLocationSubcutaneousTissue    = 5,
+    /** Sample location indicating that the location is not available */
+    GlucoseSampleLocationNotAvailable          = 15,
+};

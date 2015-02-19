@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>RACPOperator Constants Reference</title>
+	<title>GlucoseSampleLocationOption Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">RACPOperator Constants Reference</h1>
+					<h1 class="title">GlucoseSampleLocationOption Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>UHNRACPConstants.h</td>
+	<td>UHNBLETypes.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,11 +75,11 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">RACPOperator</h3>
+                    <h3 class="subsubtitle method-title">GlucoseSampleLocationOption</h3>
                     
 					
 					<div class="section section-overview">
-                        <p>All possible record access control point operators with their assigned value</p>
+                        <p>All possible glucose sample locations with their assigned value</p>
 					</div>
 					
 					
@@ -87,21 +87,19 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(uint8_t, RACPOperator ) {<br>
+                        <code>typedef NS_ENUM(uint8_t, GlucoseSampleLocationOption ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorNull</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseSampleLocationFinger</a> = 1,<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorRecordsAll</a>,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseSampleLocationAlternativeSiteTest</a> = 2,<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorLessThanEqualTo</a>,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseSampleLocationEarlobe</a> = 3,<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorGreaterThanEqualTo</a>,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseSampleLocationControlSolution</a> = 4,<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorWithinRange</a>,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseSampleLocationSubcutaneousTissue</a> = 5,<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorRecordFirst</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">RACPOperatorRecordLast</a>,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseSampleLocationNotAvailable</a> = 15,<br>
                             
                             };</code>
                     
@@ -111,11 +109,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="RACPOperatorNull"></a><code>RACPOperatorNull</code></dt>
+                            <dt><a name="" title="GlucoseSampleLocationFinger"></a><code>GlucoseSampleLocationFinger</code></dt>
 <dd>
 
 
-<p>The NULL operator. Used when an operator isn&rsquo;t required</p>
+<p>Sample location indicating that the glucose measurement was taken from the finger</p>
 
 
 
@@ -123,16 +121,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="RACPOperatorRecordsAll"></a><code>RACPOperatorRecordsAll</code></dt>
+                            <dt><a name="" title="GlucoseSampleLocationAlternativeSiteTest"></a><code>GlucoseSampleLocationAlternativeSiteTest</code></dt>
 <dd>
 
 
-<p>Operator for indicating all records</p>
+<p>Sample location indicating that the glucose measurement was taken from an alternative site</p>
 
 
 
@@ -140,16 +138,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="RACPOperatorLessThanEqualTo"></a><code>RACPOperatorLessThanEqualTo</code></dt>
+                            <dt><a name="" title="GlucoseSampleLocationEarlobe"></a><code>GlucoseSampleLocationEarlobe</code></dt>
 <dd>
 
 
-<p>Operator for indicating less than or equal to</p>
+<p>Sample location indicating that the glucose measurement was taken from the earlobe</p>
 
 
 
@@ -157,16 +155,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="RACPOperatorGreaterThanEqualTo"></a><code>RACPOperatorGreaterThanEqualTo</code></dt>
+                            <dt><a name="" title="GlucoseSampleLocationControlSolution"></a><code>GlucoseSampleLocationControlSolution</code></dt>
 <dd>
 
 
-<p>Operator for indicating greater thatn or equal to</p>
+<p>Sample location indicating that the glucose measurement was taken with control solution</p>
 
 
 
@@ -174,16 +172,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="RACPOperatorWithinRange"></a><code>RACPOperatorWithinRange</code></dt>
+                            <dt><a name="" title="GlucoseSampleLocationSubcutaneousTissue"></a><code>GlucoseSampleLocationSubcutaneousTissue</code></dt>
 <dd>
 
 
-<p>Operator for indicating within a given range</p>
+<p>Sample location indicating that the glucose measurement was taken from subcutaneous tissue</p>
 
 
 
@@ -191,16 +189,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="RACPOperatorRecordFirst"></a><code>RACPOperatorRecordFirst</code></dt>
+                            <dt><a name="" title="GlucoseSampleLocationNotAvailable"></a><code>GlucoseSampleLocationNotAvailable</code></dt>
 <dd>
 
 
-<p>Operator for indicating the first record</p>
+<p>Sample location indicating that the location is not available</p>
 
 
 
@@ -208,24 +206,7 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="RACPOperatorRecordLast"></a><code>RACPOperatorRecordLast</code></dt>
-<dd>
-
-
-<p>Operator for indicating the last record</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
@@ -242,7 +223,7 @@
                     
                     <div class="method-subsection declared-in-section">
                         <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">UHNRACPConstants.h</code></p>
+                        <p><code class="declared-in-ref">UHNBLETypes.h</code></p>
                     </div>
                     
                     
