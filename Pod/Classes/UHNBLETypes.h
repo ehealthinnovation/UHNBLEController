@@ -1,8 +1,8 @@
 //
-//  RecordAccessControlPoint.h
-//  UHNBLEDemo
+//  UHNBLETypes.h
+//  Pods
 //
-//  Created by Nathaniel Hamming on 2015-01-16.
+//  Created by Nathaniel Hamming on 2015-02-19.
 //  Copyright (c) 2015 University Health Network.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,11 +23,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#ifndef CGM_Collector_RecordAccessControlPoint_h
-#define CGM_Collector_RecordAccessControlPoint_h
-#endif
-
-#import "RACPConstants.h"
-#import "NSData+RACPCommands.h"
-#import "NSData+RACPParser.h"
-#import "NSDictionary+RACPExtension.h"
+///----------------------------------
+/// @name Short Float Type Definition
+///----------------------------------
+/**
+ Defines a short float, which is commonly used in BLE services
+ 
+ @warning Will be moved to the UHNBLEController pod
+ */
+typedef struct shortFloat {
+    char exponent : 4;
+    short mantissa : 12;
+} shortFloat;

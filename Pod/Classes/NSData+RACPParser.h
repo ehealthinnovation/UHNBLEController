@@ -24,7 +24,7 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "RACPConstants.h"
+#import "UHNRACPConstants.h"
 
 /**
  `NSData+RACPParser` provides record access control point (RACP) response parsing

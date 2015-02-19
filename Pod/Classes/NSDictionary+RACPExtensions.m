@@ -1,14 +1,14 @@
 //
-//  NSDictionary+RACPExtension.m
+//  NSDictionary+RACPExtensions.m
 //  UHNBLEDemo
 //
 //  Created by Nathaniel Hamming on 2015-02-09.
 //  Copyright (c) 2015 University Health Network.
 //
 
-#import "NSDictionary+RACPExtension.h"
+#import "NSDictionary+RACPExtensions.h"
 
-@implementation NSDictionary (RACPExtension)
+@implementation NSDictionary (RACPExtensions)
 
 - (BOOL)isNumberOfRecordResponse;
 {

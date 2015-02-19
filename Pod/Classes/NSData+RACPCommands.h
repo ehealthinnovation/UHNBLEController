@@ -24,7 +24,7 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "RACPConstants.h"
+#import "UHNRACPConstants.h"
 
 /**
  `NSData+RACPCommands` constructs record access control point commands and returns a cooresponding `NSData` object

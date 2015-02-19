@@ -1,5 +1,5 @@
 //
-//  NSDictionary+RACPExtension.h
+//  NSDictionary+RACPExtensions.h
 //  UHNBLEDemo
 //
 //  Created by Nathaniel Hamming on 2015-02-09.
@@ -24,12 +24,12 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "RACPConstants.h"
+#import "UHNRACPConstants.h"
 
 /**
- `NSDictionary+RACPExtension` provides helper methods for interpreting the dictionary returned by the `[NSData+RACPParse]`
+ `NSDictionary+RACPExtensions` provides helper methods for interpreting the dictionary returned by the `[NSData+RACPParser]`
  */
-@interface NSDictionary (RACPExtension)
+@interface NSDictionary (RACPExtensions)
 
 /**
  Checks if the RACP response details dictionary is a number of records response
@@ -102,7 +102,7 @@
  
  @return Returns the value of the response code. The values are defined in `RACPConstants.h`
  
- @discussion If a value of 255 is returned no response code value was found
+ @discussion If a value of 255 is returned no response code valuex was found
  
  */
 - (RACPResponseCode)responseCodeValue;
