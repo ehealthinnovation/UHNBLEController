@@ -37,7 +37,7 @@ typedef struct shortFloat {
 } shortFloat;
 
 ///------------------------------
-/// @name Comon Field Definitions
+/// @name Common Field Definitions
 ///------------------------------
 /**
  All possible glucose fluid types with their assigned value
