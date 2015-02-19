@@ -1,5 +1,5 @@
 PODS:
-  - Expecta (0.3.1)
+  - Expecta (0.3.2)
   - OCHamcrest (4.1.1)
   - OCMockito (1.4.0):
     - OCHamcrest (~> 4.0)
@@ -33,7 +33,7 @@ CHECKOUT OPTIONS:
     :git: git@github.ehealthinnovation.org:PHIT/UHNDebug.git
 
 SPEC CHECKSUMS:
-  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
+  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
   OCHamcrest: af1c7c5ea345de69ea6c9c2958f65f3044e5c420
   OCMockito: 991936bb775cc4c27f063d38f5e17b9161fbd21c
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
