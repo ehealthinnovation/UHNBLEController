@@ -8,13 +8,17 @@ A general central BLE library that provides helpers for common task and the gene
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-The ble controller is meant to be an property of a specific ble sensor controller (e.g. Continuous Glucose Monitor or Heart Rate controller) acting as a central manager. As a propoerty, its delegate would subscribe for notification when specific events of interest occurs and response to them. While these events are available from the CBCentralManagerDelegate and CBPeripheralDelegate, the ble controller brings them together into a single delegate protocol and provider task helpers (e.g. ensuring the service and characteristic exists in the connected peripheral before any interaction occurs).
+The ble controller is meant to be an property of a specific ble sensor controller (e.g. Continuous Glucose Monitor or Heart Rate controller) acting as a central manager. As a property, its delegate would subscribe for notification when specific events of interest occurs and respond to them. While these events are available from the CBCentralManagerDelegate and CBPeripheralDelegate, the ble controller brings them together into a single delegate protocol and provider task helpers (e.g. ensuring the service and characteristic exists in the connected peripheral before any interaction occurs).
 
 ```
   #import "UHNBLEController.h"
+  
+  @interface BLESensorController() <UHNBLEControllerDelegate>
+  
   @property(nonatomic,strong) UHNBLEController *bleController;
-
-  self.bleController =  [[UHNBLEController alloc] initWithDelegate: self requiredServices: requiredServices];
+  
+  self.bleController =  [[UHNBLEController alloc] initWithDelegate:self 
+                                                  requiredServices:requiredServices];
 ```
 ```
 - (void)bleController:(UHNBLEController*)controller didDiscoverPeripheral:(NSString*)deviceName services:(NSArray*)serviceUUIDs RSSI:(NSNumber*)RSSI;
@@ -43,7 +47,7 @@ it, simply add the following line to your Podfile:
 
 ## Documentation
 
-`appledoc` of the pod can be found at `./doc/html/index.html`
+`appledoc` of the pod can be found at `./docs/html/index.html`
 
 ## Author
 
