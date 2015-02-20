@@ -13,7 +13,6 @@ DEPENDENCIES:
   - OCMockito (~> 1.0)
   - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
   - UHNBLEController (from `../`)
-  - UHNDebug (from `git@github.ehealthinnovation.org:PHIT/UHNDebug.git`)
 
 EXTERNAL SOURCES:
   Specta:
@@ -21,16 +20,11 @@ EXTERNAL SOURCES:
     :tag: v0.3.0.beta1
   UHNBLEController:
     :path: ../
-  UHNDebug:
-    :git: git@github.ehealthinnovation.org:PHIT/UHNDebug.git
 
 CHECKOUT OPTIONS:
   Specta:
     :git: https://github.com/specta/specta.git
     :tag: v0.3.0.beta1
-  UHNDebug:
-    :commit: d9c79b9fc74af2f9da0772c587590e93b18c57e9
-    :git: git@github.ehealthinnovation.org:PHIT/UHNDebug.git
 
 SPEC CHECKSUMS:
   Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
@@ -38,6 +32,6 @@ SPEC CHECKSUMS:
   OCMockito: 991936bb775cc4c27f063d38f5e17b9161fbd21c
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
   UHNBLEController: 0a39e390da8d39afd50d0413218d8fb54069eebe
-  UHNDebug: c0f53cfc5234c9ddf4cdd8106c03cd788afd9ca3
+  UHNDebug: 6bc973e06a88c1b14017040d0bcd1ff9adc9127b
 
 COCOAPODS: 0.35.0

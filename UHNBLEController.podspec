@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://github.com/uhnmdi/UHNBLEController"
   s.license          = 'MIT'
-  s.author           = { "Nathaniel Hamming" => "nhamming@ehealthinnovation.org" }
+  s.author           = { "Nathaniel Hamming" => "nathaniel.hamming@gmail.com" }
   s.source           = { :git => "https://github.com/uhnmdi/UHNBLEController.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/NateHam80'
 

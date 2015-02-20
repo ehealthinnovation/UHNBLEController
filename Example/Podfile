@@ -2,7 +2,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'UHNBLEController', :exclusive => true do
   pod "UHNBLEController", :path => "../"
-  pod 'UHNDebug', :git => "git@github.ehealthinnovation.org:PHIT/UHNDebug.git"
 end
 
 target 'Tests', :exclusive => true do
