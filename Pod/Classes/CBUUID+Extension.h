@@ -35,7 +35,7 @@
  
  @param uuid The CBUUID with which to compare the receiver.
  
- @return YES if uuid is equivalent to the receiver
+ @return `YES` if uuid is equivalent to the receiver, otherwise `NO`
  */
 - (BOOL)isEqualToCBUUID:(CBUUID*)uuid;
 

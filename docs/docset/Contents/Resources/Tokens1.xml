@@ -161,7 +161,7 @@
 			<Abstract type="html">UHNBLEController is initialized with a delegate and optional required services.</Abstract>
 			<DeclaredIn>UHNBLEController.h</DeclaredIn>
 			
-			<Declaration>- (id)initWithDelegate:(id&lt;UHNBLEControllerDelegate&gt;)delegate requiredServices:(NSArray *)services</Declaration>
+			<Declaration>- (instancetype)initWithDelegate:(id&lt;UHNBLEControllerDelegate&gt;)delegate requiredServices:(NSArray *)services</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>delegate</Name>
@@ -171,7 +171,7 @@
 					<Abstract type="html">The required services used to filter eligibility of discovered peripherals. Only peripherals that advertist all the required services will be deemed eligible and reported to the delegate. If services is nil, all peripherals discovered will be reported to the delegate.</Abstract>
 				</Parameter>
 			</Parameters>
-			
+			<ReturnValue><Abstract type="html">Instance of a UHNBLEController</Abstract></ReturnValue>
 			<Anchor>//api/name/initWithDelegate:requiredServices:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
@@ -235,14 +235,14 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/isPerpherialConnected</TokenIdentifier>
-			<Abstract type="html">Determine if a perpherial is connected</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/UHNBLEController/isPeripheralConnected</TokenIdentifier>
+			<Abstract type="html">Determine if a peripheral is connected</Abstract>
 			<DeclaredIn>UHNBLEController.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)isPerpherialConnected</Declaration>
+			<Declaration>- (BOOL)isPeripheralConnected</Declaration>
 			
-			
-			<Anchor>//api/name/isPerpherialConnected</Anchor>
+			<ReturnValue><Abstract type="html">YES if a peripheral is connected, otherwise NO</Abstract></ReturnValue>
+			<Anchor>//api/name/isPeripheralConnected</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -312,7 +312,7 @@
 					<Abstract type="html">A NSString representing the UUID of the service of interest</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">A boolean indicating if the service is available in the connected peripheral</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">YES if the service is available in the connected peripheral, otherwise NO</Abstract></ReturnValue>
 			<Anchor>//api/name/isServiceAvailable:</Anchor>
             <NodeRef refid="1"/>
 		</Token>

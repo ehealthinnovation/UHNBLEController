@@ -33,7 +33,7 @@
 {
     [super viewWillAppear:animated];
     [self.messageView removeFromSuperview];
-    if ([self.bleController isPerpherialConnected]) {
+    if ([self.bleController isPeripheralConnected]) {
         [self.bleController cancelConnection];
     }
 }
@@ -86,7 +86,7 @@
     self.selectedPeripheralDetails = [self.peripheralList objectAtIndex: indexPath.row];
     [self.bleController connectToDiscoveredPeripheral: self.selectedPeripheralDetails[kPeripheralDeviceName]];
     self.activityIndicator.hidden = NO;
-    self.messageLabel.text = NSLocalizedString(@"Interrogating", @"UI message indicating the app is blocked while getting all services and characteristics of the perpherial");
+    self.messageLabel.text = NSLocalizedString(@"Interrogating", @"UI message indicating the app is blocked while getting all services and characteristics of the peripheral");
     [self.view addSubview: self.messageView];
     self.view.userInteractionEnabled = NO;
 }

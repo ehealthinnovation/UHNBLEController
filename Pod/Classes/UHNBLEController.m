@@ -30,14 +30,14 @@
 
 #pragma mark - Initializing & property methods
 
-- (id)init
+- (instancetype)init
 {
     [NSException raise:NSInvalidArgumentException
                 format:@"%s: Use %@ instead", __PRETTY_FUNCTION__, NSStringFromSelector(@selector(initWithDelegate:requiredServices:))];
     return nil;
 }
 
-- (id)initWithDelegate:(id<UHNBLEControllerDelegate>)delegate
+- (instancetype)initWithDelegate:(id<UHNBLEControllerDelegate>)delegate
       requiredServices:(NSArray*)services;
 {
     if ((self = [super init])) 
@@ -132,9 +132,9 @@
     }
 }
 
-- (BOOL)isPerpherialConnected
+- (BOOL)isPeripheralConnected
 {
-    DLog(@"isPerpherialConnected");
+    DLog(@"isPeripheralConnected");
     
     if (self.peripheral && CBPeripheralStateConnected == self.peripheral.state)
     {
@@ -486,7 +486,7 @@
     }
     else 
     {
-        DLog(@"did Discover services: %@ for perpherial: %@", aPeripheral.services, aPeripheral.name);
+        DLog(@"did Discover services: %@ for peripheral: %@", aPeripheral.services, aPeripheral.name);
         NSMutableArray *serviceUUIDs = [NSMutableArray array];
         for (CBService *service in aPeripheral.services) 
         {

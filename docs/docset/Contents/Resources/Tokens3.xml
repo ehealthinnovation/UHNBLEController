@@ -25,7 +25,7 @@ Checks if the receiver is equal to the given CBUUID</Abstract>
 					<Abstract type="html">The CBUUID with which to compare the receiver.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">YES if uuid is equivalent to the receiver</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">YES if uuid is equivalent to the receiver, otherwise NO</Abstract></ReturnValue>
 			<Anchor>//api/name/isEqualToCBUUID:</Anchor>
             <NodeRef refid="3"/>
 		</Token>

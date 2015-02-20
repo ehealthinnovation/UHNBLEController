@@ -26,6 +26,9 @@
 					<Name>deviceName</Name>
 					<Abstract type="html">The device name of the peripheral</Abstract>
 				</Parameter><Parameter>
+					<Name>serviceUUIDs</Name>
+					<Abstract type="html">An array of NSString representing the UUID of the services available for the peripheral. This array includes all the provided required services and potentially additional services.</Abstract>
+				</Parameter><Parameter>
 					<Name>RSSI</Name>
 					<Abstract type="html">The rssi power of the peripheral</Abstract>
 				</Parameter>
@@ -44,7 +47,7 @@
 			<Parameters>
 				<Parameter>
 					<Name>controller</Name>
-					<Abstract type="html">The UHNBLEController that is managing the peripheral</Abstract>
+					<Abstract type="html">The UHNBLEController that was managing the peripheral</Abstract>
 				</Parameter><Parameter>
 					<Name>deviceName</Name>
 					<Abstract type="html">The device name of the peripheral</Abstract>

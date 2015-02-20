@@ -69,9 +69,10 @@
  @param delegate The delegate object that will received discovery, connectivity, and read/write events. This parameter is mandatory.
  @param services The required services used to filter eligibility of discovered peripherals. Only peripherals that advertist all the required services will be deemed eligible and reported to the delegate. If `services` is `nil`, all peripherals discovered will be reported to the delegate.
  
+ @return Instance of a UHNBLEController
  */
-- (id)initWithDelegate: (id<UHNBLEControllerDelegate>)delegate
-      requiredServices: (NSArray*)services;
+- (instancetype)initWithDelegate: (id<UHNBLEControllerDelegate>)delegate
+                requiredServices: (NSArray*)services;
 
 ///-------------------------
 /// @name Connection Methods
@@ -113,9 +114,12 @@
 - (void)cancelConnection;
 
 /** 
- Determine if a perpherial is connected
+ Determine if a peripheral is connected
+ 
+ @return `YES` if a peripheral is connected, otherwise `NO`
+ 
  */
-- (BOOL)isPerpherialConnected;
+- (BOOL)isPeripheralConnected;
 
 ///-----------------------
 /// @name Discover Methods
@@ -169,7 +173,7 @@
  
  @param serviceUUID A `NSString` representing the UUID of the service of interest
  
- @return A boolean indicating if the service is available in the connected peripheral
+ @return `YES` if the service is available in the connected peripheral, otherwise `NO`
  
  */
 - (BOOL)isServiceAvailable:(NSString *)serviceUUID;
@@ -232,14 +236,16 @@
  
  */
 @protocol UHNBLEControllerDelegate <NSObject>
+
 /**
  Notifies the delegate when a peripheral has been discovered
  
  @param controller The `UHNBLEController` that discovered the peripheral
  @param deviceName The device name of the peripheral
+ @param serviceUUIDs An array of `NSString` representing the UUID of the services available for the peripheral. This array includes all the provided required services and potentially additional services.
  @param RSSI The rssi power of the peripheral
  
- @discussion This method is invoked when a peripheral with the required services is discovered. If required peripherals were provided during instantiation, the only peripherals with all of those services will be notified to the delegate. If no required services were provided, all discovered peripherals will be notified to the delegate.
+ @discussion This method is invoked when a peripheral with the required services is discovered. If required services were provided during instantiation, the only peripherals with all of those services will be notified to the delegate. If no required services were provided, all discovered peripherals will be notified to the delegate.
  
  */
 - (void)bleController:(UHNBLEController*)controller didDiscoverPeripheral:(NSString*)deviceName services:(NSArray*)serviceUUIDs RSSI:(NSNumber*)RSSI;
@@ -247,13 +253,15 @@
 /**
  Notifies the delegate when a peripheral was disconnected
  
- @param controller The `UHNBLEController` that is managing the peripheral
+ @param controller The `UHNBLEController` that was managing the peripheral
  @param deviceName The device name of the peripheral
  
  @discussion This method is invoked when a peripheral is disconnected
  
  */
 - (void)bleController:(UHNBLEController*)controller didDisconnectFromPeripheral:(NSString*)deviceName;
+
+@optional
 
 /**
  Notifies the delegate when a peripheral failed to connect
@@ -265,8 +273,6 @@
  
  */
 - (void)bleController:(UHNBLEController*)controller failedToConnectWithPeripheral:(NSString*)deviceName;
-
-@optional
 
 /**
  Notifies the delegate when the peripheral did update a characteristic notification state

@@ -34,7 +34,7 @@
 /**
  Checks if the RACP response details dictionary is a number of records response
  
- @return YES if the response was to a report number of records operation, otherwise NO
+ @return `YES` if the response was to a report number of records operation, otherwise `NO`
  
  */
 - (BOOL)isNumberOfRecordResponse;
@@ -42,7 +42,7 @@
 /**
  Checks if the RACP response details dictionary is a general response
  
- @return YES if the response was a general response, otherwise NO
+ @return `YES` if the response was a general response, otherwise `NO`
  
  */
 - (BOOL)isGeneralResponse;
@@ -50,7 +50,7 @@
 /**
  Checks if the RACP response was a successful report records operation
  
- @return YES if the response was to a successful report records operation, otherwise NO
+ @return `YES` if the response was to a successful report records operation, otherwise `NO`
  
  */
 - (BOOL)isSuccessfulResponseReportRecords;
@@ -58,7 +58,7 @@
 /**
  Checks if the RACP response was a successful delete records operation
  
- @return YES if the response was to a successful delete records operation, otherwise NO
+ @return `YES` if the response was to a successful delete records operation, otherwise `NO`
  
  */
 - (BOOL)isSuccessfulResponseDeleteRecords;
@@ -66,7 +66,7 @@
 /**
  Checks if the RACP response was a successful abort operation
  
- @return YES if the response was to a successful abort operation, otherwise NO
+ @return `YES` if the response was to a successful abort operation, otherwise `NO`
  
  */
 - (BOOL)isSuccessfulResponseAbort;
