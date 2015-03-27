@@ -87,5 +87,26 @@
     return [NSDate dateWithTimeIntervalSince1970: [self unsignedIntegerAtRange:range]];
 }
 
+- (NSUInteger) lowNibbleAtPosition:(NSUInteger) position;
+{
+    NSUInteger valueInteger = 0;
+    char valueChar;
+    
+    valueChar = *(char *)[[self subdataWithRange:NSMakeRange(position, 1)] bytes];
+    valueInteger = (NSUInteger)(valueChar & 0x0F);
+    
+    return valueInteger;
+}
+
+- (NSUInteger) highNibbleAtPosition:(NSUInteger) position;
+{
+    NSUInteger valueInteger = 0;
+    char valueChar;
+    
+    valueChar = *(char *)[[self subdataWithRange:NSMakeRange(position, 1)] bytes];
+    valueInteger = (NSUInteger)((valueChar >> 4) & 0x0F);
+    
+    return valueInteger;
+}
 
 @end

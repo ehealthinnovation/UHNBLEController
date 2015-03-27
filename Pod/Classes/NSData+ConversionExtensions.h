@@ -105,4 +105,23 @@
  */
 - (NSDate*)parseDateWithSecondsSinceReferenceDateWithRange: (NSRange)range;
 
+/**
+ Extracts the low (first 4 bits) nibble of the byte at the given position and returns it as an unsigned integer
+ 
+ @param position The position of the byte to get the lower nibble from
+ 
+ @return The unsigned integer representation of the low nibble of the byte at the position provided
+ 
+ */
+- (NSUInteger) lowNibbleAtPosition:(NSUInteger) position;
+
+/**
+ Extracts the high (last 4 bits) nibble of the byte at the given position and returns it as an unsigned integer
+ 
+ @param position The position of the byte to get the high nibble from
+ 
+ @return The unsigned integer representation of the high nibble of the byte at the position provided
+ 
+ */
+- (NSUInteger) highNibbleAtPosition:(NSUInteger) position;
 @end
