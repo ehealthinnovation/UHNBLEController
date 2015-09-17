@@ -82,3 +82,15 @@ typedef NS_ENUM (uint8_t, GlucoseSampleLocationOption) {
     /** Sample location indicating that the location is not available */
     GlucoseSampleLocationNotAvailable          = 15,
 };
+
+/**
+ Glucose concentration unit types
+ */
+typedef NS_ENUM (NSUInteger, GlucoseMeasurementGlucoseConcentrationUnits)
+{
+    GlucoseMeasurementGlucoseConcentrationUnitsKgPerL               = 0,
+    GlucoseMeasurementGlucoseConcentrationUnitsMolPerL,
+    GlucoseMeasurementGlucoseConcentrationUnitsMgPerDL,
+    GlucoseMeasurementGlucoseConcentrationUnitsMmolPerL,
+};
+

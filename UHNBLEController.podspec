@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "UHNBLEController"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A general BLE library that provides helpers for common task and the generic record access control point service."
   s.description      = <<-DESC
                        UHNBLEController provides a number of helpers, as listed below

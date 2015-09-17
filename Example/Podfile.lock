@@ -1,10 +1,10 @@
 PODS:
-  - Expecta (0.3.2)
+  - Expecta (1.0.0)
   - OCHamcrest (4.1.1)
   - OCMockito (1.4.0):
     - OCHamcrest (~> 4.0)
   - Specta (0.3.0.beta1)
-  - UHNBLEController (0.1.0):
+  - UHNBLEController (0.1.1):
     - UHNDebug
   - UHNDebug (0.1.0)
 
@@ -27,11 +27,11 @@ CHECKOUT OPTIONS:
     :tag: v0.3.0.beta1
 
 SPEC CHECKSUMS:
-  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
-  OCHamcrest: af1c7c5ea345de69ea6c9c2958f65f3044e5c420
-  OCMockito: 991936bb775cc4c27f063d38f5e17b9161fbd21c
+  Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
+  OCHamcrest: 6f03ffa81d12feab872638490a44ab0a6d3aca10
+  OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
-  UHNBLEController: 0a39e390da8d39afd50d0413218d8fb54069eebe
-  UHNDebug: 6bc973e06a88c1b14017040d0bcd1ff9adc9127b
+  UHNBLEController: cd72294bf3245773428eb88e2b2ad1e950fa7d9a
+  UHNDebug: 09eb4d23b4c465e4a997d8ea225c29743c06bec8
 
 COCOAPODS: 0.35.0

@@ -124,4 +124,16 @@
  
  */
 - (NSUInteger) highNibbleAtPosition:(NSUInteger) position;
+
+/**
+ Converts the NSData to an NSDate starting at 'location' and adds 'timeOffsetInMinutesNumber' to the minutes of the date
+ 
+ @param location The location to start parsing the date in the NSData object
+ @param timeOffsetInMinutesNumber An integer number of minutes to be added to the minutes component of the date
+ 
+ @return The NSDate object found by parsing the data at the location specified
+ 
+ */
+- (NSDate *) parseDateAtLocation:(NSUInteger) location andTimeOffsetInMinutes:(NSNumber *) timeOffsetInMinutesNumber;
+
 @end

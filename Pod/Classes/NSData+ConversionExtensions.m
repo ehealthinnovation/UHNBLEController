@@ -109,4 +109,39 @@
     return valueInteger;
 }
 
+- (NSDate *) parseDateAtLocation:(NSUInteger) location andTimeOffsetInMinutes:(NSNumber *) timeOffsetInMinutesNumber;
+{
+    NSUInteger length = 2; // the year field is 2 bytes
+    NSUInteger year = [self unsignedIntegerAtRange:NSMakeRange(location, length)];
+    location += length;
+    length = 1;  // each of the rest of the fields are 1 byte
+    NSUInteger month = [self unsignedIntegerAtRange:NSMakeRange(location, length)];
+    location += length;
+    NSUInteger day = [self unsignedIntegerAtRange:NSMakeRange(location, length)];
+    location += length;
+    NSUInteger hours = [self unsignedIntegerAtRange:NSMakeRange(location, length)];
+    location += length;
+    NSUInteger minutes = [self unsignedIntegerAtRange:NSMakeRange(location, length)];
+    location += length;
+    NSUInteger seconds = [self unsignedIntegerAtRange:NSMakeRange(location, length)];
+    
+    // include the time offset if it exists
+    NSInteger timeOffset = ((nil != timeOffsetInMinutesNumber) ? [timeOffsetInMinutesNumber integerValue] : 0);
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    [components setCalendar:calendar];
+    [components setYear: year];
+    [components setMonth: month];
+    [components setDay: day];
+    [components setHour: hours];
+    
+    [components setMinute: minutes + timeOffset];
+    [components setSecond: seconds];
+    NSDate *date = [calendar dateFromComponents:components];
+    
+    return date;
+}
+
+
 @end
