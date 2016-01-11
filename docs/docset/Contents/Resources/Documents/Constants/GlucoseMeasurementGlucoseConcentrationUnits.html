@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>RACPOperator Constants Reference</title>
+	<title>GlucoseMeasurementGlucoseConcentrationUnits Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">RACPOperator Constants Reference</h1>
+					<h1 class="title">GlucoseMeasurementGlucoseConcentrationUnits Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>UHNRACPConstants.h</td>
+	<td>UHNBLETypes.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,11 +75,11 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">RACPOperator</h3>
+                    <h3 class="subsubtitle method-title">GlucoseMeasurementGlucoseConcentrationUnits</h3>
                     
 					
 					<div class="section section-overview">
-                        <p>All possible record access control point operators with their assigned value</p>
+                        <p>Glucose concentration unit types</p>
 					</div>
 					
 					
@@ -87,21 +87,15 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(uint8_t, RACPOperator ) {<br>
+                        <code>typedef NS_ENUM(NSUInteger, GlucoseMeasurementGlucoseConcentrationUnits ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorNull</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseMeasurementGlucoseConcentrationUnitsKgPerL</a> = 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorRecordsAll</a>,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseMeasurementGlucoseConcentrationUnitsMolPerL</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorLessThanEqualTo</a>,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseMeasurementGlucoseConcentrationUnitsMgPerDL</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">RACPOperatorGreaterThanEqualTo</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">RACPOperatorWithinRange</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">RACPOperatorRecordFirst</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">RACPOperatorRecordLast</a>,<br>
+                            &nbsp;&nbsp; <a href="">GlucoseMeasurementGlucoseConcentrationUnitsMmolPerL</a>,<br>
                             
                             };</code>
                     
@@ -111,11 +105,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="RACPOperatorNull"></a><code>RACPOperatorNull</code></dt>
+                            <dt><a name="" title="GlucoseMeasurementGlucoseConcentrationUnitsKgPerL"></a><code>GlucoseMeasurementGlucoseConcentrationUnitsKgPerL</code></dt>
 <dd>
 
 
-<p>The NULL operator. Used when an operator isn&rsquo;t required</p>
+<p>Glucose concentration units kg / L</p>
 
 
 
@@ -123,16 +117,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="RACPOperatorRecordsAll"></a><code>RACPOperatorRecordsAll</code></dt>
+                            <dt><a name="" title="GlucoseMeasurementGlucoseConcentrationUnitsMolPerL"></a><code>GlucoseMeasurementGlucoseConcentrationUnitsMolPerL</code></dt>
 <dd>
 
 
-<p>Operator for indicating all records</p>
+<p>Glucose concentration units mol / L</p>
 
 
 
@@ -140,16 +134,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="RACPOperatorLessThanEqualTo"></a><code>RACPOperatorLessThanEqualTo</code></dt>
+                            <dt><a name="" title="GlucoseMeasurementGlucoseConcentrationUnitsMgPerDL"></a><code>GlucoseMeasurementGlucoseConcentrationUnitsMgPerDL</code></dt>
 <dd>
 
 
-<p>Operator for indicating less than or equal to</p>
+<p>Glucose concentration units mg / dL</p>
 
 
 
@@ -157,16 +151,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="RACPOperatorGreaterThanEqualTo"></a><code>RACPOperatorGreaterThanEqualTo</code></dt>
+                            <dt><a name="" title="GlucoseMeasurementGlucoseConcentrationUnitsMmolPerL"></a><code>GlucoseMeasurementGlucoseConcentrationUnitsMmolPerL</code></dt>
 <dd>
 
 
-<p>Operator for indicating greater thatn or equal to</p>
+<p>Glucose concentration units mmol / L</p>
 
 
 
@@ -174,58 +168,7 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="RACPOperatorWithinRange"></a><code>RACPOperatorWithinRange</code></dt>
-<dd>
-
-
-<p>Operator for indicating within a given range</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="RACPOperatorRecordFirst"></a><code>RACPOperatorRecordFirst</code></dt>
-<dd>
-
-
-<p>Operator for indicating the first record</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="RACPOperatorRecordLast"></a><code>RACPOperatorRecordLast</code></dt>
-<dd>
-
-
-<p>Operator for indicating the last record</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">UHNRACPConstants.h</code>.
+		Declared In <code class="declared-in-ref">UHNBLETypes.h</code>.
 	</p>
 	
 </dd>
@@ -242,7 +185,7 @@
                     
                     <div class="method-subsection declared-in-section">
                         <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">UHNRACPConstants.h</code></p>
+                        <p><code class="declared-in-ref">UHNBLETypes.h</code></p>
                     </div>
                     
                     

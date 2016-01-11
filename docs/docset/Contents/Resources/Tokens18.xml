@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/RACPResponseCode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/RACPResponseCode</TokenIdentifier>
+			<Abstract type="html">All possible record access control point response codes with their assigned value</Abstract>
+			<DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPSuccess</TokenIdentifier>
+            <Abstract type="html">Response code for success</Abstract>
+            <Declaration>RACPSuccess</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPNotSupportedOpCode</TokenIdentifier>
+            <Abstract type="html">Response code for op code not supported</Abstract>
+            <Declaration>RACPNotSupportedOpCode</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPInvalidOperator</TokenIdentifier>
+            <Abstract type="html">Response code for invalid operator</Abstract>
+            <Declaration>RACPInvalidOperator</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPNotSupportedOperator</TokenIdentifier>
+            <Abstract type="html">Response code for not supported operator</Abstract>
+            <Declaration>RACPNotSupportedOperator</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPInvalidOperand</TokenIdentifier>
+            <Abstract type="html">Response code for invalid operand</Abstract>
+            <Declaration>RACPInvalidOperand</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPNoRecordsFound</TokenIdentifier>
+            <Abstract type="html">Response code for no records found</Abstract>
+            <Declaration>RACPNoRecordsFound</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPAbortUnsuccessful</TokenIdentifier>
+            <Abstract type="html">Response code for abort unsuccessful</Abstract>
+            <Declaration>RACPAbortUnsuccessful</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPProcedureNotCompleted</TokenIdentifier>
+            <Abstract type="html">Response code for procedure not completed</Abstract>
+            <Declaration>RACPProcedureNotCompleted</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPNotSupportedOperand</TokenIdentifier>
+            <Abstract type="html">Response code for not supported operand</Abstract>
+            <Declaration>RACPNotSupportedOperand</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="18"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

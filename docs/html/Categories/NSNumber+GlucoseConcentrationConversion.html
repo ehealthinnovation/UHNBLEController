@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>NSString(GUIDExtension) Category Reference</title>
+	<title>NSNumber(GlucoseConcentrationConversion) Category Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,13 +56,13 @@
 	
 
 	
-	<optgroup label="Class Methods">
+
+	
+	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/generateGUID">+ generateGUID</option>
+		<option value="//api/name/convertGlucoseConcentrationFromUnits:toUnits:">- convertGlucoseConcentrationFromUnits:toUnits:</option>
 		
 	</optgroup>
-	
-
 	
 	
 </select>
@@ -77,13 +77,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">NSString(GUIDExtension) Category Reference</h1>
+					<h1 class="title">NSNumber(GlucoseConcentrationConversion) Category Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>NSString+GUIDExtension.h</td>
+	<td>NSNumber+GlucoseConcentrationConversion.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -93,7 +93,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p><code>NSString+GUIDExtension</code> provides the ability to create a GUID</p>
+						<p><code>NSDictionary+GlucoseConcentrationConversion</code> includes helper methods to converts a glucose concentration values</p>
 					</div>
 					
 					
@@ -109,8 +109,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/generateGUID" title="generateGUID"></a>
-	<h3 class="method-title"><code><a href="#//api/name/generateGUID">+&nbsp;generateGUID</a></code>
+	<a name="//api/name/convertGlucoseConcentrationFromUnits:toUnits:" title="convertGlucoseConcentrationFromUnits:toUnits:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/convertGlucoseConcentrationFromUnits:toUnits:">&ndash;&nbsp;convertGlucoseConcentrationFromUnits:toUnits:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -120,20 +120,37 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Generates a GUID</p>
+				<p>Converts a glucose value from one unit to another.  Available units can be found in <code>UHNBLETypes.h</code> and include kg / L, mol / L, mg / dL and mmol / L.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (NSString *)generateGUID</code></div>
+			<div class="method-subsection method-declaration"><code>- (NSNumber *)convertGlucoseConcentrationFromUnits:(GlucoseMeasurementGlucoseConcentrationUnits)<em>fromUnits</em> toUnits:(GlucoseMeasurementGlucoseConcentrationUnits)<em>toUnits</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fromUnits</code></th>
+						<td><p>The units to convert the glucose value from</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>toUnits</code></th>
+						<td><p>The units to convert the glucose value to</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>The generated GUID</p>
+				<p>The glucose value for the requested units as a <code>NSNumber</code></p>
 			</div>
 			
 
@@ -148,7 +165,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">NSString+GUIDExtension.h</code></p>
+				<p><code class="declared-in-ref">NSNumber+GlucoseConcentrationConversion.h</code></p>
 			</div>
 			
 			

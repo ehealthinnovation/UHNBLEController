@@ -1,77 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/GlucoseSampleLocationOption.html">
+	<File path="Protocols/UHNRACPControllerDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/GlucoseSampleLocationOption</TokenIdentifier>
-			<Abstract type="html">All possible glucose sample locations with their assigned value</Abstract>
-			<DeclaredIn>UHNBLETypes.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/UHNRACPControllerDelegate</TokenIdentifier>
+			<Abstract type="html">The UHNRACPControllerDelegate protocol defines the methods that a delegate of a UHNRACPController object must adopt. The optional methods of the protocol allow the delegate to be notified upon completion of RACP operations.</Abstract>
+			<DeclaredIn>UHNRACPControllerDelegate.h</DeclaredIn>
             
 			
 			<NodeRef refid="11"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationFinger</TokenIdentifier>
-            <Abstract type="html">Sample location indicating that the glucose measurement was taken from the finger</Abstract>
-            <Declaration>GlucoseSampleLocationFinger</Declaration>
-            
-            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNRACPControllerDelegate/racpController:didSetNotificationStateRACP:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate after a successful RACP operation</Abstract>
+			<DeclaredIn>UHNRACPControllerDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)racpController:(id)controller didSetNotificationStateRACP:(BOOL)enabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNRACPController that initiated the RACP operation, which could be any of a number of different controller types, hence its type is &apos;id&apos;</Abstract>
+				</Parameter><Parameter>
+					<Name>enabled</Name>
+					<Abstract type="html">The state that the RACP notification was set to</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/racpController:didSetNotificationStateRACP:</Anchor>
             <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationAlternativeSiteTest</TokenIdentifier>
-            <Abstract type="html">Sample location indicating that the glucose measurement was taken from an alternative site</Abstract>
-            <Declaration>GlucoseSampleLocationAlternativeSiteTest</Declaration>
-            
-            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNRACPControllerDelegate/racpController:RACPOperationSuccessful:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate after a successful RACP operation</Abstract>
+			<DeclaredIn>UHNRACPControllerDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)racpController:(id)controller RACPOperationSuccessful:(RACPOpCode)opCode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNRACPController that initiated the RACP operation, which could be any of a number of different controller types, hence its type is &apos;id&apos;</Abstract>
+				</Parameter><Parameter>
+					<Name>opCode</Name>
+					<Abstract type="html">The opCode of the operation</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/racpController:RACPOperationSuccessful:</Anchor>
             <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationEarlobe</TokenIdentifier>
-            <Abstract type="html">Sample location indicating that the glucose measurement was taken from the earlobe</Abstract>
-            <Declaration>GlucoseSampleLocationEarlobe</Declaration>
-            
-            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UHNRACPControllerDelegate/racpController:RACPOperation:failed:</TokenIdentifier>
+			<Abstract type="html">Notifies the delegate after a failed RACP operation</Abstract>
+			<DeclaredIn>UHNRACPControllerDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)racpController:(id)controller RACPOperation:(RACPOpCode)opCode failed:(RACPResponseCode)responseCode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>controller</Name>
+					<Abstract type="html">The UHNRACPController that initiated the RACP operation, which could be any of a number of different controller types, hence its type is &apos;id&apos;</Abstract>
+				</Parameter><Parameter>
+					<Name>opCode</Name>
+					<Abstract type="html">The opCode of the operation</Abstract>
+				</Parameter><Parameter>
+					<Name>responseCode</Name>
+					<Abstract type="html">The responseCode of the characteristic after the failed operation</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/racpController:RACPOperation:failed:</Anchor>
             <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationControlSolution</TokenIdentifier>
-            <Abstract type="html">Sample location indicating that the glucose measurement was taken with control solution</Abstract>
-            <Declaration>GlucoseSampleLocationControlSolution</Declaration>
-            
-            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationSubcutaneousTissue</TokenIdentifier>
-            <Abstract type="html">Sample location indicating that the glucose measurement was taken from subcutaneous tissue</Abstract>
-            <Declaration>GlucoseSampleLocationSubcutaneousTissue</Declaration>
-            
-            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/GlucoseSampleLocationNotAvailable</TokenIdentifier>
-            <Abstract type="html">Sample location indicating that the location is not available</Abstract>
-            <Declaration>GlucoseSampleLocationNotAvailable</Declaration>
-            
-            <DeclaredIn>UHNBLETypes.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
+		</Token>
+		
         
         
 	</File>

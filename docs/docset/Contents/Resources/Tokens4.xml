@@ -129,6 +129,60 @@
             <NodeRef refid="4"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/lowNibbleAtPosition:</TokenIdentifier>
+			<Abstract type="html">Extracts the low (first 4 bits) nibble of the byte at the given position and returns it as an unsigned integer</Abstract>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)lowNibbleAtPosition:(NSUInteger)position</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>position</Name>
+					<Abstract type="html">The position of the byte to get the lower nibble from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The unsigned integer representation of the low nibble of the byte at the position provided</Abstract></ReturnValue>
+			<Anchor>//api/name/lowNibbleAtPosition:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/highNibbleAtPosition:</TokenIdentifier>
+			<Abstract type="html">Extracts the high (last 4 bits) nibble of the byte at the given position and returns it as an unsigned integer</Abstract>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)highNibbleAtPosition:(NSUInteger)position</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>position</Name>
+					<Abstract type="html">The position of the byte to get the high nibble from</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The unsigned integer representation of the high nibble of the byte at the position provided</Abstract></ReturnValue>
+			<Anchor>//api/name/highNibbleAtPosition:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/parseDateAtLocation:andTimeOffsetInMinutes:</TokenIdentifier>
+			<Abstract type="html">Converts the NSData to an NSDate starting at &apos;location&apos; and adds &apos;timeOffsetInMinutesNumber&apos; to the minutes of the date</Abstract>
+			<DeclaredIn>NSData+ConversionExtensions.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)parseDateAtLocation:(NSUInteger)location andTimeOffsetInMinutes:(NSNumber *)timeOffsetInMinutesNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>location</Name>
+					<Abstract type="html">The location to start parsing the date in the NSData object</Abstract>
+				</Parameter><Parameter>
+					<Name>timeOffsetInMinutesNumber</Name>
+					<Abstract type="html">An integer number of minutes to be added to the minutes component of the date</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The NSDate object found by parsing the data at the location specified</Abstract></ReturnValue>
+			<Anchor>//api/name/parseDateAtLocation:andTimeOffsetInMinutes:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
         
         
 	</File>

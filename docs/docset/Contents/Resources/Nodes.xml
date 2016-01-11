@@ -28,6 +28,7 @@
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
 						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
 						
 					</Subnodes>
 				</Node>
@@ -37,7 +38,8 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
 						
 					</Subnodes>
 				</Node>
@@ -47,12 +49,13 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="10"/>
-						<NodeRef refid="11"/>
 						<NodeRef refid="12"/>
 						<NodeRef refid="13"/>
 						<NodeRef refid="14"/>
 						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
 						
 					</Subnodes>
 				</Node>
@@ -260,6 +263,33 @@
             
         </Node>
 		<Node id="8" type="file" documentType="reference">
+            <Name>NSNumber(GlucoseConcentrationConversion)</Name>
+            <Path>Categories/NSNumber+GlucoseConcentrationConversion.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/NSNumber+GlucoseConcentrationConversion.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/NSNumber+GlucoseConcentrationConversion.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Categories/NSNumber+GlucoseConcentrationConversion.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
             <Name>NSString(GUIDExtension)</Name>
             <Path>Categories/NSString+GUIDExtension.html</Path>
             
@@ -287,7 +317,7 @@
             
         </Node>
 		
-        <Node id="9" type="file" documentType="reference">
+        <Node id="10" type="file" documentType="reference">
             <Name>UHNBLEControllerDelegate</Name>
             <Path>Protocols/UHNBLEControllerDelegate.html</Path>
             
@@ -314,33 +344,65 @@
             </Subnodes>
             
         </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>UHNRACPControllerDelegate</Name>
+            <Path>Protocols/UHNRACPControllerDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/UHNRACPControllerDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/UHNRACPControllerDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/UHNRACPControllerDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
 		
-        <Node id="10" type="file" documentType="reference">
+        <Node id="12" type="file" documentType="reference">
             <Name>GlucoseFluidTypeOption</Name>
             <Path>Constants/GlucoseFluidTypeOption.html</Path>
             
         </Node>
-		<Node id="11" type="file" documentType="reference">
+		<Node id="13" type="file" documentType="reference">
+            <Name>GlucoseMeasurementGlucoseConcentrationUnits</Name>
+            <Path>Constants/GlucoseMeasurementGlucoseConcentrationUnits.html</Path>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
             <Name>GlucoseSampleLocationOption</Name>
             <Path>Constants/GlucoseSampleLocationOption.html</Path>
             
         </Node>
-		<Node id="12" type="file" documentType="reference">
+		<Node id="15" type="file" documentType="reference">
             <Name>RACPFilterType</Name>
             <Path>Constants/RACPFilterType.html</Path>
             
         </Node>
-		<Node id="13" type="file" documentType="reference">
+		<Node id="16" type="file" documentType="reference">
             <Name>RACPOpCode</Name>
             <Path>Constants/RACPOpCode.html</Path>
             
         </Node>
-		<Node id="14" type="file" documentType="reference">
+		<Node id="17" type="file" documentType="reference">
             <Name>RACPOperator</Name>
             <Path>Constants/RACPOperator.html</Path>
             
         </Node>
-		<Node id="15" type="file" documentType="reference">
+		<Node id="18" type="file" documentType="reference">
             <Name>RACPResponseCode</Name>
             <Path>Constants/RACPResponseCode.html</Path>
             

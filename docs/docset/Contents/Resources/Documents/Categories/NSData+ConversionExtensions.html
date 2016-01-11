@@ -60,7 +60,13 @@
 	
 	<optgroup label="Instance Methods">
 		
+		<option value="//api/name/highNibbleAtPosition:">- highNibbleAtPosition:</option>
+		
 		<option value="//api/name/integerAtRange:">- integerAtRange:</option>
+		
+		<option value="//api/name/lowNibbleAtPosition:">- lowNibbleAtPosition:</option>
+		
+		<option value="//api/name/parseDateAtLocation:andTimeOffsetInMinutes:">- parseDateAtLocation:andTimeOffsetInMinutes:</option>
 		
 		<option value="//api/name/parseDateFromStringWithFormat:andRange:">- parseDateFromStringWithFormat:andRange:</option>
 		
@@ -534,6 +540,185 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/lowNibbleAtPosition:" title="lowNibbleAtPosition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lowNibbleAtPosition:">&ndash;&nbsp;lowNibbleAtPosition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Extracts the low (first 4 bits) nibble of the byte at the given position and returns it as an unsigned integer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSUInteger)lowNibbleAtPosition:(NSUInteger)<em>position</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>position</code></th>
+						<td><p>The position of the byte to get the lower nibble from</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The unsigned integer representation of the low nibble of the byte at the position provided</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSData+ConversionExtensions.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/highNibbleAtPosition:" title="highNibbleAtPosition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/highNibbleAtPosition:">&ndash;&nbsp;highNibbleAtPosition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Extracts the high (last 4 bits) nibble of the byte at the given position and returns it as an unsigned integer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSUInteger)highNibbleAtPosition:(NSUInteger)<em>position</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>position</code></th>
+						<td><p>The position of the byte to get the high nibble from</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The unsigned integer representation of the high nibble of the byte at the position provided</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSData+ConversionExtensions.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/parseDateAtLocation:andTimeOffsetInMinutes:" title="parseDateAtLocation:andTimeOffsetInMinutes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/parseDateAtLocation:andTimeOffsetInMinutes:">&ndash;&nbsp;parseDateAtLocation:andTimeOffsetInMinutes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Converts the NSData to an NSDate starting at &lsquo;location&rsquo; and adds &lsquo;timeOffsetInMinutesNumber&rsquo; to the minutes of the date</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDate *)parseDateAtLocation:(NSUInteger)<em>location</em> andTimeOffsetInMinutes:(NSNumber *)<em>timeOffsetInMinutesNumber</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>location</code></th>
+						<td><p>The location to start parsing the date in the NSData object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeOffsetInMinutesNumber</code></th>
+						<td><p>An integer number of minutes to be added to the minutes component of the date</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The NSDate object found by parsing the data at the location specified</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSData+ConversionExtensions.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -547,7 +732,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Centre for Global eHealth Innovation. All rights reserved. Updated: 2015-02-20</p>
+						<p class="copyright">Copyright &copy; 2016 Centre for Global eHealth Innovation. All rights reserved. Updated: 2016-01-11</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

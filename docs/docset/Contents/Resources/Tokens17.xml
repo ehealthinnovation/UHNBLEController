@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/RACPOperator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/RACPOperator</TokenIdentifier>
+			<Abstract type="html">All possible record access control point operators with their assigned value</Abstract>
+			<DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOperatorNull</TokenIdentifier>
+            <Abstract type="html">The NULL operator. Used when an operator isn&apos;t required</Abstract>
+            <Declaration>RACPOperatorNull</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOperatorRecordsAll</TokenIdentifier>
+            <Abstract type="html">Operator for indicating all records</Abstract>
+            <Declaration>RACPOperatorRecordsAll</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOperatorLessThanEqualTo</TokenIdentifier>
+            <Abstract type="html">Operator for indicating less than or equal to</Abstract>
+            <Declaration>RACPOperatorLessThanEqualTo</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOperatorGreaterThanEqualTo</TokenIdentifier>
+            <Abstract type="html">Operator for indicating greater thatn or equal to</Abstract>
+            <Declaration>RACPOperatorGreaterThanEqualTo</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOperatorWithinRange</TokenIdentifier>
+            <Abstract type="html">Operator for indicating within a given range</Abstract>
+            <Declaration>RACPOperatorWithinRange</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOperatorRecordFirst</TokenIdentifier>
+            <Abstract type="html">Operator for indicating the first record</Abstract>
+            <Declaration>RACPOperatorRecordFirst</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/RACPOperatorRecordLast</TokenIdentifier>
+            <Abstract type="html">Operator for indicating the last record</Abstract>
+            <Declaration>RACPOperatorRecordLast</Declaration>
+            
+            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
+            
+            <NodeRef refid="17"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/RACPResponseCode.html">
+	<File path="Constants/RACPFilterType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/RACPResponseCode</TokenIdentifier>
-			<Abstract type="html">All possible record access control point response codes with their assigned value</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/RACPFilterType</TokenIdentifier>
+			<Abstract type="html">All possible record access control point filter types with their assigned value</Abstract>
 			<DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
 			
@@ -14,9 +14,9 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RACPSuccess</TokenIdentifier>
-            <Abstract type="html">Response code for success</Abstract>
-            <Declaration>RACPSuccess</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/RACPFilterTypeSquenceNumber</TokenIdentifier>
+            <Abstract type="html">Filter type of sequence number</Abstract>
+            <Declaration>RACPFilterTypeSquenceNumber</Declaration>
             
             <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
@@ -24,9 +24,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RACPNotSupportedOpCode</TokenIdentifier>
-            <Abstract type="html">Response code for op code not supported</Abstract>
-            <Declaration>RACPNotSupportedOpCode</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/RACPFilterTypeTimeOffset</TokenIdentifier>
+            <Abstract type="html">Filter type of time offset</Abstract>
+            <Declaration>RACPFilterTypeTimeOffset</Declaration>
             
             <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
@@ -34,69 +34,9 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RACPInvalidOperator</TokenIdentifier>
-            <Abstract type="html">Response code for invalid operator</Abstract>
-            <Declaration>RACPInvalidOperator</Declaration>
-            
-            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RACPNotSupportedOperator</TokenIdentifier>
-            <Abstract type="html">Response code for not supported operator</Abstract>
-            <Declaration>RACPNotSupportedOperator</Declaration>
-            
-            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RACPInvalidOperand</TokenIdentifier>
-            <Abstract type="html">Response code for invalid operand</Abstract>
-            <Declaration>RACPInvalidOperand</Declaration>
-            
-            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RACPNoRecordsFound</TokenIdentifier>
-            <Abstract type="html">Response code for no records found</Abstract>
-            <Declaration>RACPNoRecordsFound</Declaration>
-            
-            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RACPAbortUnsuccessful</TokenIdentifier>
-            <Abstract type="html">Response code for abort unsuccessful</Abstract>
-            <Declaration>RACPAbortUnsuccessful</Declaration>
-            
-            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RACPProcedureNotCompleted</TokenIdentifier>
-            <Abstract type="html">Response code for procedure not completed</Abstract>
-            <Declaration>RACPProcedureNotCompleted</Declaration>
-            
-            <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
-            
-            <NodeRef refid="15"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/RACPNotSupportedOperand</TokenIdentifier>
-            <Abstract type="html">Response code for not supported operand</Abstract>
-            <Declaration>RACPNotSupportedOperand</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/RACPFilterTypeUserFacingTime</TokenIdentifier>
+            <Abstract type="html">Filter type of user facing time</Abstract>
+            <Declaration>RACPFilterTypeUserFacingTime</Declaration>
             
             <DeclaredIn>UHNRACPConstants.h</DeclaredIn>
             
