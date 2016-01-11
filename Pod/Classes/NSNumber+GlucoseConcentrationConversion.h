@@ -26,8 +26,21 @@
 #import <Foundation/Foundation.h>
 #import "UHNBLETypes.h"
 
+/**
+ `NSDictionary+GlucoseConcentrationConversion` includes helper methods to converts a glucose concentration values
+ */
 @interface NSNumber (GlucoseConcentrationConversion)
 
+/**
+ Converts a glucose value from one unit to another.  Available units can be found in `UHNBLETypes.h` and include kg / L, mol / L, mg / dL and mmol / L.
+
+ 
+ @param fromUnits   The units to convert the glucose value from
+ @param toUnits     The units to convert the glucose value to
+ 
+ @returns The glucose value for the requested units as a `NSNumber`
+ 
+ */
 - (NSNumber *) convertGlucoseConcentrationFromUnits:(GlucoseMeasurementGlucoseConcentrationUnits) fromUnits toUnits:(GlucoseMeasurementGlucoseConcentrationUnits) toUnits;
 
 @end

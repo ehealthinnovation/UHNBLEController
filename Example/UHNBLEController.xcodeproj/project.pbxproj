@@ -233,6 +233,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				DC6257BC931BEC8FC011CFB3 /* Copy Pods Resources */,
+				3403B4FB21931ABB93A7908B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +253,7 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				3D7A5B6AB0B160B46BF62B27 /* Copy Pods Resources */,
+				D7AE4ED20ED5058678869997 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +325,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3403B4FB21931ABB93A7908B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UHNBLEController/Pods-UHNBLEController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3D7A5B6AB0B160B46BF62B27 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,6 +367,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"Centre for Global eHealth Innovation\";\ncompanyID=\"org.ehealthinnovation\";\ncompanyURL=\"http://ehealthinnovation.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"../docs\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--output \"${outputPath}\" \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n--ignore .m \\\n--ignore FBSnapshotTestCase \\\n--ignore Expecta \\\n--ignore Specta \\\n--ignore OCMockito \\\n--ignore OCHamcrest \\\n\"${PROJECT_DIR}\"";
+		};
+		D7AE4ED20ED5058678869997 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		DC0BD00DC0181BBAC010F9F4 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
